@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+ 
+	<definition name="theme" template="/WEB-INF/jsp/theme/pt_home_theme.jsp">
+		<put-attribute name="title" value="Master homepage" />
+		<put-attribute name="ngcontroller" value="" />
+		<put-attribute name="sidebar" value="/WEB-INF/jsp/theme/sidebar.jsp"/>
+		<put-attribute name="body" value="" />
+		<put-list-attribute name="javascripts" />
+	</definition>
+	
+	
+	<definition name="themeno" template="/WEB-INF/jsp/theme/pt_home_theme_no.jsp">
+		<put-attribute name="title" value="Master homepage" />
+		<put-attribute name="ngcontroller" value="" />
+		<put-attribute name="sidebar" value=""/>
+		<put-attribute name="body" value="" />
+	</definition>
+ 
+
+	<!--<definition name="home" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/home/ptg-home.jsp" />
+	</definition>-->
+
+	<definition name="home" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/home/ptg-home-new.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/ptg-home-new.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="account_login" template="/WEB-INF/jsp/views/account/account_login.jsp">
+		 
+		<put-attribute name="body" value="/WEB-INF/views/account/w_sheet_account_login.jsp" />
+	 
+	</definition>
+	<definition name="home_test" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/home/home_test.jsp" />
+	</definition>
+	<definition name="account_Info" extends="theme">
+		<put-attribute name="title" value="Account : PT Group" />
+		<put-attribute name="ngcontroller" value="AccountController" />
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/account/account_Info.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/controllers/accountController.js" />
+		</put-list-attribute>
+	</definition>
+     <definition name="randomOil" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/randomOil.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/randomOil.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="randomOilForValidate" extends="theme"> 
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/randomOilForValidate.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/randomOilForValidate.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="assignment" extends="theme"> 
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/assignment/assignment.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/assignment.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="assignRandomLastResult" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/assignRandomLastResultDetail.jsp" />
+	</definition>
+
+	<definition name="assignmentTaskLastResult" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/assignmentTaskLastResultList.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/assignmentTaskLastResultList.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="getAssignWorkDetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/assignment/assignmentGetWork.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/assignmentGetWork.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="workFlow" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/workFlow/workFlow.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/workFlow.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="assignmentDetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/assignment/assignmentDetail.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/assignmentDetail.js" />
+		</put-list-attribute>
+	</definition>
+
+
+	<definition name="submitTask" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/task/submitTask.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/submitTask.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="settingSPECAssign" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingSpecAssign.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingSPECAssign.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="settingWork" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingWorkAssign.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingWorkAssign.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="manageUser" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initManageUser.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/manageUser.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="manageSource" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initManageSource.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/manageSource.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="setltrspec" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/setLTRSpec.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/setLTRSpec.js" />
+		</put-list-attribute>
+	</definition>
+	
+		<definition name="setltrspecdetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/setLTRSpecDetail.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/setLTRSpecDetail.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="waitAuditTask" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/task/waitAuditTask.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/waitAuditTask.js" />
+		</put-list-attribute>
+	</definition>
+
+	<!--<definition name="assignmentTaskLastResult" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/assignmentTaskLastResult_old.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/assignmentTaskLastResult.js" />
+		</put-list-attribute>
+	</definition>-->
+
+	 <definition name="requestValidateOil" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/requestValidateOil.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/requestValidate.js" />
+		</put-list-attribute>
+	</definition>
+	 <definition name="randomOilDetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/randomOilDetail.jsp" />
+	</definition>
+	<definition name="manageAnalysisOil" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageAnalysisOil.jsp" />
+	</definition>
+	<definition name="manageAnalysisOilDetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageAnalysisOilDetail.jsp" />
+	</definition>
+	<definition name="manageAnalysisOilEdit" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageAnalysisOilEdit.jsp" />
+	</definition>
+	<definition name="initSampleResult" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/saveSampleResult.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/saveSampleResult.js" />
+		</put-list-attribute>
+	</definition>
+	 <definition name="manageReviseRequestNo" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/manageReviseRequestNo.jsp" />
+	</definition> 
+	 <definition name="redirectRequestNoDetail" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/manageReviseRequestNoDetail.jsp" />
+	</definition>
+	 <definition name="initInquiryLTRNo" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/inquiryLTRNo.jsp" />
+	</definition>
+	 <definition name="initInquirySaveResult" extends="theme">
+	    <put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/inquiryLTRNoDetail.jsp" />
+	</definition>
+	<definition name="randomMeterSetup" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomMeter/randomMeterSetup.jsp" />
+	</definition>
+	 <definition name="randomMeterPerMonth" extends="theme">
+	    <put-attribute name="body"  value="/WEB-INF/jsp/views/randomMeter/randomMeterByMonth.jsp" />
+	</definition>
+	<definition name="remindingTruckSample" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomMeter/remindingTruckSample.jsp" />
+	</definition>
+	<definition name="initPlaning" extends="theme">
+	    <put-attribute name="body"  value="/WEB-INF/jsp/views/planning/planingValidateStation.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/planning.js" />
+		</put-list-attribute>
+	</definition>
+		<definition name="initPlaningDetail" extends="theme">
+	    <put-attribute name="body"  value="/WEB-INF/jsp/views/planning/planingValidateStationDetail.jsp" />
+	</definition>
+	 <definition name="initApprovedLTRNo" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/inquiryApprovedLTRNo.jsp" />
+	</definition>
+	 <definition name="initSearchLTRNo" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/randomOil/inquirySearchLTRNo.jsp" />
+	</definition>
+
+	 <definition name="reportMobileSummaryServiceStation" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/mobile/summaryMobile.jsp" />
+		 <put-list-attribute name="javascripts" inherit="true">
+			 <add-attribute value="/assets/js/summaryMobile.js" />
+		 </put-list-attribute>
+	</definition>
+	<definition name="reportMobileSummaryServiceStationExcel" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/mobile/summaryMobileExcel.jsp" />
+		 <put-list-attribute name="javascripts" inherit="true">
+			 <add-attribute value="/assets/js/summaryMobileExcel.js" />
+		 </put-list-attribute>
+	</definition>
+	 <definition name="uploadPTCStation" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/uploadDataStationPTC.jsp" />
+	</definition>
+	
+	 <definition name="soap-test-request" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/testSoapRequest.jsp" />
+	</definition>
+
+	<definition name="setTestScores" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initTestScores.jsp" />
+	</definition>
+	
+	<definition name="settingRandom" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingRandom.jsp" />
+	</definition>
+
+	<definition name="settingAssignment" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingAssignment.jsp" />
+	</definition>
+
+    <definition name="settingRandomLast" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingRandomLast.jsp" />
+	</definition>
+	
+	<definition name="settingRandomSorting" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingRandomSorting.jsp" />
+	</definition>
+    
+	<definition name="SetModel" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSetModel.jsp" />
+	</definition>
+	
+	<definition name="reportsum" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportSum.jsp" />
+	</definition>
+	
+	<definition name="reportSumPDF" extends="themeno">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportSumPDF.jsp" />
+	</definition>
+	<definition name="testDragAndDrop" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/test/testDragAndDrop.jsp" />
+	</definition>
+
+
+	<definition name="reportLTRTuckView" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportLTRTruck.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/reportLTRTruck.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="settingItemSpecsView" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/settingItemSpecs.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingItemSpecs.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="reportLTRPlantView" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportLTRPlant.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/reportLTRPlant.js" />
+		</put-list-attribute>
+	</definition>
+
+	<definition name="cancelThisMonthView" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/cancelThisMonth.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/cancelThisMonth.js" />
+		</put-list-attribute>
+	</definition>
+		<definition name="viewwaitwork" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/viewwaitwork.jsp" />
+	</definition>
+	<definition name="reportcrate" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/reportcrate.jsp" />
+	    <put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/reportcrate.js" />
+		</put-list-attribute>
+	</definition>
+		<definition name="settingWorkForAdmin" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingWorkAssignForAdmin.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingWorkAssignForAdmin.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="settingMobileLtrSpec" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingMobileLtrSpec.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingMobileLtrSpec.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="settingMobileTool" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingMobileTool.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingMobileTool.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="viewwaitworksubrole" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/viewwaitworksubrole.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/viewwaitworksubrole.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="settingMobilePlant" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/setting/initSettingMobilePlant.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/settingMobilePlant.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="reportLtrCondition" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportLTRCondition.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/reportLTRCondition.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="manageDataMaster" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageDataMaster.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/manageDataMaster.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="manageDataVisual" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageDataVisual.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/manageDataVisual.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="manageDataColor" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/request/manageDataColor.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/manageDataColor.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="reportRandomSample2" extends="theme">
+		<put-attribute name="body"  value="/WEB-INF/jsp/views/report/reportRandomSample2.jsp" />
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/assets/js/reportRandomSample2.js" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,22 @@
+#This Project is Demo/Plan Of PTG Project etc.
+
+Java 1.8
+Spring mapping(MVC) ,Spring Boots
+Project(.war) complie lib with maven dependency
+
+
+---------------------------------------------
+
+Html5
+JS jqurey 2.1.2.0 .min .js
+css (datatable , ui , calendar , bootboxs, modals, alert , msgText) (on PTG_Styles.css)
+theme (defalut webapp/web-inf/jsp/theme/pt_home_theme2.jsp
+
+---------------------Config--------------
+config DB and ETC. with application.properties
+config map (tile.xml)
+config msg (MSgLabConfig.properties)
+config Constant Programs. (PtgConfigText.properties)
+
+--------------Readme.text----------------22/06/2018 10.30 AM
+edit version 1.0.1

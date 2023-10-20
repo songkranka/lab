@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="REPORT_A3" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cae5b1a4-1199-4353-b586-d77fc4c0efd9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="9fcf2e53-bffa-4c0e-b876-32ed1ff5e548">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="labcode" class="java.lang.String"/>
+		<field name="testeddate" class="java.lang.String"/>
+		<field name="product" class="java.lang.String"/>
+		<field name="typeOfSampling" class="java.lang.String"/>
+		<field name="ftir" class="java.lang.String"/>
+		<field name="gc" class="java.lang.String"/>
+		<field name="eralytics" class="java.lang.String"/>
+		<field name="distillation" class="java.lang.String"/>
+		<field name="water" class="java.lang.String"/>
+		<field name="tester" class="java.lang.String"/>
+		<field name="note" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="CollectionBeanParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="527" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="20" width="801" height="43" forecolor="#D6D6D6" backcolor="#E6E6E6" uuid="77a42c73-167a-4598-8029-62882422c50b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="351" y="2" width="100" height="17" uuid="dedf9b1f-bdf1-4b7d-89b5-00a5f1ea190c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ใบมอบหมายงาน กลุ่ม A3]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" uuid="a5d73f45-c401-4146-b21d-ad78775b7762">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="62" width="801" height="1" uuid="164b1d04-6724-4c89-b743-4c16acb6bc8b">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="21" width="1" height="41" uuid="eb1c928e-d56f-4efc-b671-9d32f3c4f227">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="80" y="20" width="1" height="42" uuid="c8b04d8f-9616-4637-b0ef-bb1eeaeceb84">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="200" y="21" width="1" height="42" uuid="5159d1c1-5ee5-4abd-83b1-333e45c15935">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="139" y="20" width="1" height="42" uuid="4caffb2e-09e5-4198-a532-0635e951c5dd">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="261" y="21" width="1" height="43" uuid="d35bfa64-b801-4a33-9ece-10e5437b7642">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="459" y="21" width="1" height="41" uuid="b15f8e3d-e6bc-4b3c-8801-28ae509dc4fe">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="396" y="43" width="1" height="20" uuid="b39b45aa-36af-4042-b805-9bf268c515ae">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="528" y="21" width="1" height="43" uuid="f3496dfe-e610-4863-b811-8f40b1d95830">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="81" y="20" width="58" height="42" uuid="c73a516f-1f93-44d9-8e9f-bdba44e11955"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tested
+date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="21" width="60" height="41" uuid="94875a07-5977-4504-921c-a68ce23b3195"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="21" width="62" height="41" uuid="030923aa-939a-4874-ab37-4b294606f338"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type of
+Sampling]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="42" width="68" height="20" uuid="9e81082e-2ded-4b47-a917-7ec4f4282e98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FTIR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="21" width="80" height="41" uuid="df27afcd-7819-4cb0-8a31-a13942e76766"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LabCode.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="21" width="197" height="21" uuid="861465bd-33ae-4551-a0e2-2d83e3148d2b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Denatured Ethanol]]></text>
+			</staticText>
+			<line>
+				<reportElement x="262" y="42" width="197" height="1" uuid="e7e6d8aa-2ae0-4267-8806-ef3f6e16f8c2">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="690" y="20" width="1" height="43" uuid="a847962b-690f-4112-9031-d503eb86dcf2">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="602" y="21" width="1" height="42" uuid="501072ee-f3fc-4f71-9055-aec0d39c0cba">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="330" y="42" width="1" height="21" uuid="6f142d5b-733d-42f4-a00d-dbeffa04871a">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="330" y="42" width="66" height="20" uuid="bb408043-959d-4cc9-8f60-71a3de829180"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="42" width="63" height="20" uuid="56706b33-e527-4c01-9aa1-ec0ddee27d65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Eralytics]]></text>
+			</staticText>
+			<line>
+				<reportElement x="801" y="20" width="1" height="43" uuid="4350add8-b36d-4259-af2d-3e0570145da8">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="460" y="21" width="68" height="41" uuid="cea9b207-4904-4f1e-b96a-0b38416490b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distillation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="528" y="21" width="74" height="41" uuid="f15c538f-4c44-49f1-a700-1c10def2df7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Water]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="603" y="20" width="87" height="43" uuid="6a2b1712-24be-48f6-adfa-5384ff28f9f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="691" y="20" width="110" height="43" uuid="b6213cc3-6414-4b0c-90c6-4ed511e90e78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Note.]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="0" y="63" width="810" height="464" uuid="dc5f96c1-167a-472c-b070-12f4318ebd6b">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="6328b74b-6cb2-4cce-bd25-21886f6cc65f">
+						<dataSourceExpression><![CDATA[$P{CollectionBeanParam}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="80" uuid="ff5a093a-0ddd-473a-aab6-c7252b869c97">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="eabe514e-909c-4eb2-8a0f-3dc689c8f0b3"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{labcode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="4247f512-c540-40b7-a3be-5172d576b0cf">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="789c818f-8306-4743-a619-deafc7fd488c"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{testeddate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="2dcfd656-3a1b-406c-b274-83d106af0a84">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="2c46eacc-91c0-4712-b1df-f84cfdaa6216"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{product}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="b1df3a55-f3d0-4805-b0c7-f5dc7b75b339">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="62" height="30" uuid="faaa0178-8f5b-48b4-910c-43e80e793278"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{typeOfSampling}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="68" uuid="0add80b9-1c9e-46d6-bf72-cf9eb0b24f27">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="68" height="30" uuid="4220e4c9-9bc6-4825-b266-0af08235ca71"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="13" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ftir}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="67" uuid="04f29d8c-9c33-4909-96ae-50767a537bf6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="67" height="30" uuid="0b4d7529-2844-4cf9-a80c-3496df39fb7c"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="13" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{gc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="e6fe19e4-0cb1-4c36-8167-dacc5407dc08">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="62" height="30" uuid="57a74d6a-506d-4ef5-95b5-12a99a09d2da"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="13" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{eralytics}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="69" uuid="cdb5657a-0a3c-4a85-864f-0b125b71f0bd">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="69" height="30" uuid="e932443c-e446-4176-82b2-2a28b64644df"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="13" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{distillation}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="7a7e5347-88ae-4a51-9fcf-aaf414c224cd">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="74" height="30" uuid="d59db810-a413-490a-9b9b-747ff1b369e8"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="13" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{water}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="88" uuid="05fd6c83-6ecf-42be-b7cd-108ce8a87b7b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="88" height="30" uuid="0936f476-1018-4b9c-909c-8513d27230c0"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{tester}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="111" uuid="ec50d4b3-01d8-4d8d-9f01-bc918f0cbd97">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="111" height="30" uuid="87c588ed-1d71-4438-9566-3bdceff1de68"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

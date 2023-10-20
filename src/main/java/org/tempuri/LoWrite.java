@@ -1,0 +1,267 @@
+/**
+ * LoWrite.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
+package org.tempuri;
+
+public class LoWrite  implements java.io.Serializable {
+    private java.lang.String sProject;
+
+    private java.util.Calendar dTime;
+
+    private java.lang.String sIp;
+
+    private java.lang.String sUser;
+
+    private java.lang.String sMessage;
+
+    public LoWrite() {
+    }
+
+    public LoWrite(
+           java.lang.String sProject,
+           java.util.Calendar dTime,
+           java.lang.String sIp,
+           java.lang.String sUser,
+           java.lang.String sMessage) {
+           this.sProject = sProject;
+           this.dTime = dTime;
+           this.sIp = sIp;
+           this.sUser = sUser;
+           this.sMessage = sMessage;
+    }
+
+
+    /**
+     * Gets the sProject value for this LoWrite.
+     * 
+     * @return sProject
+     */
+    public java.lang.String getSProject() {
+        return sProject;
+    }
+
+
+    /**
+     * Sets the sProject value for this LoWrite.
+     * 
+     * @param sProject
+     */
+    public void setSProject(java.lang.String sProject) {
+        this.sProject = sProject;
+    }
+
+
+    /**
+     * Gets the dTime value for this LoWrite.
+     * 
+     * @return dTime
+     */
+    public java.util.Calendar getDTime() {
+        return dTime;
+    }
+
+
+    /**
+     * Sets the dTime value for this LoWrite.
+     * 
+     * @param dTime
+     */
+    public void setDTime(java.util.Calendar dTime) {
+        this.dTime = dTime;
+    }
+
+
+    /**
+     * Gets the sIp value for this LoWrite.
+     * 
+     * @return sIp
+     */
+    public java.lang.String getSIp() {
+        return sIp;
+    }
+
+
+    /**
+     * Sets the sIp value for this LoWrite.
+     * 
+     * @param sIp
+     */
+    public void setSIp(java.lang.String sIp) {
+        this.sIp = sIp;
+    }
+
+
+    /**
+     * Gets the sUser value for this LoWrite.
+     * 
+     * @return sUser
+     */
+    public java.lang.String getSUser() {
+        return sUser;
+    }
+
+
+    /**
+     * Sets the sUser value for this LoWrite.
+     * 
+     * @param sUser
+     */
+    public void setSUser(java.lang.String sUser) {
+        this.sUser = sUser;
+    }
+
+
+    /**
+     * Gets the sMessage value for this LoWrite.
+     * 
+     * @return sMessage
+     */
+    public java.lang.String getSMessage() {
+        return sMessage;
+    }
+
+
+    /**
+     * Sets the sMessage value for this LoWrite.
+     * 
+     * @param sMessage
+     */
+    public void setSMessage(java.lang.String sMessage) {
+        this.sMessage = sMessage;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof LoWrite)) return false;
+        LoWrite other = (LoWrite) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            ((this.sProject==null && other.getSProject()==null) || 
+             (this.sProject!=null &&
+              this.sProject.equals(other.getSProject()))) &&
+            ((this.dTime==null && other.getDTime()==null) || 
+             (this.dTime!=null &&
+              this.dTime.equals(other.getDTime()))) &&
+            ((this.sIp==null && other.getSIp()==null) || 
+             (this.sIp!=null &&
+              this.sIp.equals(other.getSIp()))) &&
+            ((this.sUser==null && other.getSUser()==null) || 
+             (this.sUser!=null &&
+              this.sUser.equals(other.getSUser()))) &&
+            ((this.sMessage==null && other.getSMessage()==null) || 
+             (this.sMessage!=null &&
+              this.sMessage.equals(other.getSMessage())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        if (getSProject() != null) {
+            _hashCode += getSProject().hashCode();
+        }
+        if (getDTime() != null) {
+            _hashCode += getDTime().hashCode();
+        }
+        if (getSIp() != null) {
+            _hashCode += getSIp().hashCode();
+        }
+        if (getSUser() != null) {
+            _hashCode += getSUser().hashCode();
+        }
+        if (getSMessage() != null) {
+            _hashCode += getSMessage().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(LoWrite.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">loWrite"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("SProject");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "sProject"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("DTime");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "dTime"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "dateTime"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("SIp");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "sIp"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("SUser");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "sUser"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("SMessage");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "sMessage"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+}

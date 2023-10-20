@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ExampleChart" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a3a92fe3-4292-4eaa-b5b0-89a4679aed13">
+	<style name="Table_TH" mode="Opaque" backcolor="#FAEBD7">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFE4BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="CHART_DATASET" whenResourceMissingType="Empty" uuid="f4c4b71b-c003-4a4c-829c-237e889b89c0">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="total" class="java.lang.Integer"/>
+		<field name="category" class="java.lang.String"/>
+		<field name="series" class="java.lang.String"/>
+		<variable name="TESTGRAPH" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="PIE_DATASET" uuid="7436b9c4-95fd-43ac-8917-b2846b79c9da">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="num" class="java.lang.Integer"/>
+		<field name="category" class="java.lang.String"/>
+		<field name="perCent" class="java.lang.Double"/>
+	</subDataset>
+	<subDataset name="CHOICE_EXAMPLE_DATASET" uuid="9d0e362f-f9a5-44dd-9d8d-039880c2b675">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="unit" class="java.lang.Double"/>
+		<field name="name" class="java.lang.String"/>
+		<field name="series" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="PRACTICE_EXAMPLE_DATASET" uuid="97e49c27-62ad-4674-aef4-c0a74e5590e2">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="unit" class="java.lang.Double"/>
+		<field name="name" class="java.lang.String"/>
+		<field name="series" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="CHART2_DATASET" uuid="c87044e4-60ae-4b3f-9ffb-a4ca8a9cf3a7">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="unit" class="java.lang.Integer"/>
+		<field name="name_unit" class="java.lang.String"/>
+		<field name="series" class="java.lang.String"/>
+		<field name="percents" class="java.lang.Double"/>
+	</subDataset>
+	<parameter name="CHART_DATASET" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="PIE_DATASET" class="java.util.List"/>
+	<parameter name="CHOICE_EXAMPLE_DATASET" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="PRACTICE_EXAMPLE_DATASET" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="CHART2_DATASET" class="java.util.List"/>
+	<parameter name="date_verify" class="java.lang.String"/>
+	<parameter name="province" class="java.lang.String"/>
+	<parameter name="district" class="java.lang.String"/>
+	<parameter name="name_office" class="java.lang.String"/>
+	<parameter name="img_logo" class="java.lang.String"/>
+	<parameter name="color_page" class="java.lang.String"/>
+	<parameter name="DYNAMIC_GRAPH1" class="java.lang.Integer"/>
+	<parameter name="DYNAMIC_GRAPH2" class="java.lang.Integer"/>
+	<parameter name="DYNAMIC_GRAPH3" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="c" class="java.lang.Long"/>
+	<field name="shipcountry" class="java.lang.String"/>
+	<field name="series" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="595" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-1" width="842" height="595" uuid="6fc463b8-6147-4fbd-acda-8f73f4cdb2db">
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{color_page}]]></propertyExpression>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="3" y="99" width="120" height="20" backcolor="#F4F788" uuid="786f44cd-2cac-492d-a819-ca3518c85108"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="544" y="46" width="190" height="20" backcolor="#F9FF4D" uuid="164af373-7bc1-4f84-b33c-a29d8a4dd565"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="5" y="324" width="360" height="23" backcolor="#3DD99A" uuid="28ac46d4-e104-4f61-a92b-f9e0192b5028">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="418" y="325" width="311" height="23" backcolor="#3DD99A" uuid="0e856413-a9f3-4228-8e10-b8d039c1e897">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<barChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="7" y="128" width="385" height="179" uuid="6ef1599b-84ae-43e0-813a-09b4bc637777"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="CHART_DATASET" uuid="1a69f31c-8b58-41d0-8809-93ce64e92a40">
+							<dataSourceExpression><![CDATA[$P{CHART_DATASET}]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{total}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="false">
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000">
+							<tickLabelFont>
+								<font size="11"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+					<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+					<rangeAxisMaxValueExpression><![CDATA[$P{DYNAMIC_GRAPH1}]]></rangeAxisMaxValueExpression>
+				</barPlot>
+			</barChart>
+			<line>
+				<reportElement x="408" y="1" width="1" height="583" uuid="f6e88fa0-0736-4024-a855-b5814c414234"/>
+			</line>
+			<barChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="621" y="478" width="210" height="94" uuid="ea666cae-c66f-428d-9ee3-b130e1b23969">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="CHOICE_EXAMPLE_DATASET" uuid="105a1b74-8d66-44a2-b681-7b79e9c684b0">
+							<dataSourceExpression><![CDATA[$P{PRACTICE_EXAMPLE_DATASET}]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{name}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{unit}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="false">
+					<plot orientation="Horizontal"/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#FFFFFF" tickLabelColor="#000000" axisLineColor="#FFFFFF">
+							<labelFont>
+								<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#FFFFFF"/>
+					</valueAxisFormat>
+					<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+					<rangeAxisMaxValueExpression><![CDATA[120]]></rangeAxisMaxValueExpression>
+				</barPlot>
+			</barChart>
+			<barChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="621" y="362" width="210" height="91" uuid="37e3981b-c851-470b-9d77-67255803b43c">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="PRACTICE_EXAMPLE_DATASET" uuid="1a2369e5-11d1-4c68-ad6e-57f0ee40b74f">
+							<dataSourceExpression><![CDATA[$P{CHOICE_EXAMPLE_DATASET}]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{series}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{name}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{unit}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="true">
+					<plot orientation="Horizontal" foregroundAlpha="0.98">
+						<seriesColor seriesOrder="0" color="#42D93D"/>
+					</plot>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#FFFFFF">
+							<labelFont>
+								<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+							</labelFont>
+							<tickLabelFont>
+								<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+							</tickLabelFont>
+						</axisFormat>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#FFFFFF"/>
+					</valueAxisFormat>
+					<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+					<rangeAxisMaxValueExpression><![CDATA[120]]></rangeAxisMaxValueExpression>
+				</barPlot>
+			</barChart>
+			<staticText>
+				<reportElement x="4" y="3" width="320" height="22" uuid="1f51b2d9-ca52-44cd-94d7-8febbec25bed">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผลการดำเนินงานแผนกตรวจสอบคุณภาพน้ำมันที่สถานีบริการ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="26" width="90" height="17" uuid="6967529e-cf74-4700-a6ff-37ea3e002f14">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันที่เข้าตรวจสอบ :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="47" width="90" height="17" uuid="520f9468-ff1c-451d-8d17-c90d97a72f0d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จังหวัด              :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="68" width="90" height="17" uuid="b1cba5cd-cbb5-4934-944d-cf07b4e9f572">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เขตการขาย        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="99" width="116" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="424df30d-5176-4d3a-a2e8-583da4e8ea72">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เขตการขายที่เข้าตรวจ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="327" width="352" height="25" uuid="bc8ad4d1-e4f5-4f99-aa16-50c23392b3b3"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รายการผลิตภัณฑ์ที่ไม่เป็นไปตามข้อกำหนดตรวจสอบพบที่สถานีบริการ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="312" width="390" height="1" uuid="0319e460-2d3c-4813-8518-2ba61671a5e2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="416" y="320" width="401" height="1" uuid="197513cd-2ca6-42cc-bb70-786ed36a5056">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="577" y="1" width="160" height="20" uuid="ee4e4856-1292-4b10-a87d-e98ac97616a4"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เขตการขายสถานีบริการ]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="427" y="359" width="100" height="97" backcolor="#93DBBD" uuid="d082bad5-d5bb-4e52-a90f-b2ec8065c475"/>
+				<graphicElement>
+					<pen lineColor="#4FB071"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="425" y="478" width="100" height="100" backcolor="#DE807E" uuid="046f08f5-c7c7-4f72-92a7-8d74f855836d"/>
+				<graphicElement>
+					<pen lineColor="#BF3432"/>
+				</graphicElement>
+			</ellipse>
+			<staticText>
+				<reportElement x="423" y="328" width="295" height="26" backcolor="#2FE0AB" uuid="a510344d-c459-4334-8ed3-b28d494a0ded"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผลการเข้าฝึกอบรม "การควบคุมคุณภาพน้ำมันสถานีบริการ"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="377" width="80" height="33" uuid="c9adcdde-1af5-4d68-bc0c-d99a8275bf24"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ข้อสอบ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="395" width="115" height="41" uuid="7f8d04eb-d7c8-460d-bc2a-e3f0f6ecd8a4"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="33" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ปรนัย]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="494" width="80" height="33" uuid="09e1b665-892d-44d2-94a7-9001ae44fc35"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ข้อสอบ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="511" width="115" height="41" uuid="417977af-b2fe-4449-b322-1bc30a8ce983"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="33" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ภาคปฏิบัติ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="547" y="46" width="190" height="21" uuid="ad27be1c-63f6-4ad0-ba1d-2b1babf492fe"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เครื่องมือสถานีบริการที่พบว่าชำรุด]]></text>
+			</staticText>
+			<image>
+				<reportElement x="759" y="3" width="71" height="71" uuid="565e6538-213f-4afd-b531-a76e8dfbd332">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{img_logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="501" y="23" width="235" height="20" uuid="e05854ca-5a77-47fd-b814-66bee8f3c2a8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="17" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name_office}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="26" width="160" height="17" uuid="1f3276e5-cdd1-4996-b472-69ccec382ec4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date_verify}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="47" width="304" height="18" uuid="f12a809f-f9f9-4247-bdac-3f97b9d08a67">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{province}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="68" width="304" height="18" uuid="9ec84d83-4bbe-451e-a54f-bebb269e552c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{district}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="534" y="371" width="86" height="20" uuid="02894b93-aca2-4ba2-98ed-ed4eb7566c14"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%สถานีที่เข้าร่วม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="399" width="86" height="20" uuid="d2c60feb-7036-4eba-b3a9-e13e0c4752b3"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%ที่ผ่าน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="426" width="86" height="20" uuid="8751a1c3-d48a-4431-8807-92e023cf2e94"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%ที่ไม่ผ่าน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="490" width="86" height="20" uuid="64edd13f-cf93-4647-8dd2-1ef00404a002"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%สถานีที่เข้าร่วม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="518" width="86" height="20" uuid="67d99220-202b-49a6-9c93-77034d234756"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%ที่ผ่าน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="545" width="86" height="20" uuid="a34e727a-6c48-4a64-816a-3de517c3fcdb"/>
+				<textElement textAlignment="Right">
+					<font fontName="TH SarabunPSK" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%ที่ไม่ผ่าน]]></text>
+			</staticText>
+			<multiAxisChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="4" y="354" width="404" height="230" uuid="ace9449f-0e0e-4d39-a63e-a37aec462da8"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<multiAxisPlot>
+					<plot/>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="a9402032-0299-4e87-be1a-35dcdc62a4ad"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF"/>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="CHART2_DATASET" uuid="795ff6d8-2b16-492a-af02-56649a7c86f3">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CHART2_DATASET})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{name_unit}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{percents}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot labelRotation="25.0"/>
+								<categoryAxisFormat labelRotation="25.0">
+									<axisFormat verticalTickLabels="false">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["%ที่ไม่ผ่าน"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat verticalTickLabels="false">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[100]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="8bec38c0-b43e-419a-a785-b8cb5ed2eb11"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF"/>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="CHART2_DATASET" uuid="840dabe7-8da9-4dab-be0b-67b0099aa999">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CHART2_DATASET})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{name_unit}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{unit}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="false">
+								<plot/>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="11"/>
+								</itemLabel>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="11"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวนที่ไม่ผ่าน"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[$P{DYNAMIC_GRAPH3}]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+			<multiAxisChart>
+				<chart isShowLegend="false" evaluationTime="Report">
+					<reportElement x="416" y="81" width="415" height="235" uuid="9054372d-0418-49ad-8fe5-f672e285680f"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<multiAxisPlot>
+					<plot/>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="7a6e1eea-f4f0-424f-be09-0fab65b82d03"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF"/>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="PIE_DATASET" uuid="7fa8d3a8-05d7-44f5-b3fe-584a0767bbc2">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{PIE_DATASET})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot labelRotation="25.0"/>
+								<categoryAxisFormat labelRotation="25.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["% ที่พบว่าชำรุด"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[100]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="93e52682-8bae-4093-8fbf-8a711d5c4a8b"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF"/>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="PIE_DATASET" uuid="85e9bb37-d30a-4302-b8f9-59248a82df11">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{PIE_DATASET})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{num}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="false">
+								<plot labelRotation="45.0"/>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="11"/>
+								</itemLabel>
+								<categoryAxisFormat labelRotation="45.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวนที่พบว่าชำรุด"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[$P{DYNAMIC_GRAPH2}]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+		</band>
+	</detail>
+</jasperReport>

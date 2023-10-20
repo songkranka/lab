@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportScrum1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7f076625-27a0-49d1-a9f9-9c2f11703b47">
+	<subDataset name="chartDataSet" uuid="119b7f0e-01ef-4e2b-b628-d76f51e83768">
+		<field name="series" class="java.lang.String"/>
+		<field name="category" class="java.lang.String"/>
+		<field name="value" class="java.lang.Double"/>
+		<field name="label" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="reportAuditOil" uuid="e58d81fa-47c2-43c8-a213-a58f099bd252">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="category" class="java.lang.String"/>
+		<field name="total" class="java.lang.Integer"/>
+		<field name="num" class="java.lang.Integer"/>
+	</subDataset>
+	<subDataset name="reportAudit" uuid="644b33c8-7cf7-41a3-91a1-a5fc17703058">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="category" class="java.lang.String"/>
+		<field name="total" class="java.lang.Integer"/>
+		<field name="num" class="java.lang.Integer"/>
+		<field name="perCent" class="java.lang.Double"/>
+	</subDataset>
+	<subDataset name="reportOilStation" uuid="644b33c8-7cf7-41a3-91a1-a5fc17703058">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="category" class="java.lang.String"/>
+		<field name="perCent" class="java.lang.Double"/>
+		<field name="total" class="java.lang.Integer"/>
+		<field name="num" class="java.lang.Integer"/>
+	</subDataset>
+	<parameter name="TITLE_NAME" class="java.lang.String"/>
+	<parameter name="SUB_TITLE_NAME" class="java.lang.String"/>
+	<parameter name="DATE_EDIT_DATA" class="java.lang.String"/>
+	<parameter name="DATA_BETWEEN" class="java.lang.String"/>
+	<parameter name="DATA_AUDIT_OIL_PTC" class="java.util.List"/>
+	<parameter name="DATA_AUDIT_OIL_PTF" class="java.util.List"/>
+	<parameter name="DATA_AUDIT_PTC" class="java.util.List"/>
+	<parameter name="DATA_AUDIT_PTF" class="java.util.List"/>
+	<parameter name="DATA_AUDIT_FRANCHISE_PTF" class="java.util.List"/>
+	<parameter name="DATA_OIL_STATION" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<summary>
+		<band height="802">
+			<textField>
+				<reportElement x="26" y="26" width="528" height="30" uuid="d9d8d890-cd21-4397-b00c-5638ae64ba80"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="16" isBold="true"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{SUB_TITLE_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="-4" width="528" height="30" uuid="a6a7bc3c-56c1-4098-83b3-68f7bce83cab"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="18" isBold="true"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TITLE_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="28" y="58" width="526" height="25" uuid="2457de0a-ef10-490b-b177-6607e6c88798"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="14" isBold="true"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["วันที่ : "+$P{DATA_BETWEEN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="90" width="248" height="25" uuid="0080046b-6466-4909-ab43-ab12221598a2"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1 ผลการตรวจสอบคุณภาพน้ำมัน สถานีบริการปิโตรเลียมไทยคอร์เปอเรชั่น (PTC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="90" width="246" height="25" uuid="d3794f99-3535-409b-b210-142a457318b4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2 ผลการตรวจคุณภาพน้ำมัน สถานีบริการเฟรนไชน์ (PTF)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="350" width="246" height="25" uuid="48b2c6d5-4c8c-42da-9b3f-ae80841a4983"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3 ผลการรับน้ำมันของสถานีบริการเฟรนไชน์ (PTF)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="350" width="284" height="25" uuid="81486e00-f00a-44d8-8da5-74794178fe54"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4 ผลการตรวจสอบคุณภาพรายเขต]]></text>
+			</staticText>
+			<multiAxisChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="120" width="286" height="214" uuid="a1312b00-e2f0-49e0-8b42-2a89811e6c69">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle>
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+						<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTC"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartLegend>
+				</chart>
+				<multiAxisPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#54A4CC"/>
+						<seriesColor seriesOrder="1" color="#E89E09"/>
+					</plot>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="4d178186-d54d-4658-8368-36a034d7b041"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTC"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="c20abb9e-82ae-43d1-bee8-11b29062192a">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTC})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["% ผ่าน spec"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="#949494"/>
+								</plot>
+								<categoryAxisLabelExpression><![CDATA["ชนิดน้ำมัน"]]></categoryAxisLabelExpression>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["% ผ่าน spec"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement key="invisible" x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="f95bd5f8-5109-42f6-9116-9419fc11e28d"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTC"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="d416b972-49b2-485d-b5e5-c68e18856df8">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTC})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA[""]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="rgba(255, 255, 255, 0.0)"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK"/>
+								</itemLabel>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisFormat>
+									<axisFormat axisLineColor="#FFFFFF">
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" isBold="false"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="de5f0c31-ea0f-4d66-9a66-58a8ebb400d2"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTC"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="f7beb2e2-26e6-45d9-8e76-c6e0ecf1b579">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTC})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["จำนวนตัวอย่าง"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{total}]]></valueExpression>
+								</categorySeries>
+								<categorySeries>
+									<seriesExpression><![CDATA["ผ่าน spec"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{num}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="true">
+								<plot labelRotation="67.0">
+									<seriesColor seriesOrder="0" color="#4B88CB"/>
+									<seriesColor seriesOrder="1" color="#E66826"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</itemLabel>
+								<categoryAxisFormat labelRotation="67.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวนน้ำมัน"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat tickLabelMask="#,##0.##">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+			<multiAxisChart>
+				<chart evaluationTime="Report">
+					<reportElement x="294" y="120" width="285" height="214" uuid="79c95d01-ef53-4776-8394-5551285751e6">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle>
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+						<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTF"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartLegend>
+				</chart>
+				<multiAxisPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#54A4CC"/>
+						<seriesColor seriesOrder="1" color="#E89E09"/>
+					</plot>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="f84a58d8-aad5-40cd-a1aa-2a23127af9a4"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="481f0a45-2d8c-4866-a815-40462f1f4294">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["% ผ่าน spec"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="#949494"/>
+								</plot>
+								<categoryAxisLabelExpression><![CDATA["ชนิดน้ำมัน"]]></categoryAxisLabelExpression>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["% ผ่าน spec"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement key="invisible" x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="57d09f1b-782b-4a4f-89c6-b5d2facd3873"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="7e47ea5f-fa10-423d-b167-7c3fe886a8a0">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA[""]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="rgba(255, 255, 255, 0.0)"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK"/>
+								</itemLabel>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisFormat>
+									<axisFormat axisLineColor="#FFFFFF">
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" isBold="false"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="7ec77414-a324-4366-97bb-b8a4a99254ed"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพน้ำมันของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="0210ff01-580c-4841-a1e5-a9e3d078a869">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["จำนวนตัวอย่าง"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{total}]]></valueExpression>
+								</categorySeries>
+								<categorySeries>
+									<seriesExpression><![CDATA["ผ่าน spec"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{num}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="true">
+								<plot labelRotation="67.0">
+									<seriesColor seriesOrder="0" color="#4B88CB"/>
+									<seriesColor seriesOrder="1" color="#E66826"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</itemLabel>
+								<categoryAxisFormat labelRotation="67.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวนน้ำมัน"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat tickLabelMask="#,##0.##">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+			<multiAxisChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="375" width="285" height="214" uuid="24de7071-6453-4477-b506-ccf4051fc713">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle>
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+						<titleExpression><![CDATA["ผลประเมินการรับน้ำมันบริษัทของสถานีบริการ PTF"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartLegend>
+				</chart>
+				<multiAxisPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#54A4CC"/>
+						<seriesColor seriesOrder="1" color="#E89E09"/>
+					</plot>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="c0dba45e-4d21-4ec3-9485-52ec40dc1dac"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลประเมินการรับน้ำมันบริษัทของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="544bbbb4-71a9-4429-bb38-a82239137682">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_FRANCHISE_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["% รับน้ำมันบริษัท"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="#949494"/>
+								</plot>
+								<categoryAxisLabelExpression><![CDATA["คลังสาขา"]]></categoryAxisLabelExpression>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["% รับน้ำมันบริษัท"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement key="invisible" x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="4f9dfc6c-855e-4d1f-8e1c-894c189a2921"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลประเมินการรับน้ำมันบริษัทของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="5876240a-bd43-4cc0-bff8-b12f78b571e9">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_FRANCHISE_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA[""]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="rgba(255, 255, 255, 0.0)"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK"/>
+								</itemLabel>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisFormat>
+									<axisFormat axisLineColor="#FFFFFF">
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" isBold="false"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="8a956994-6da5-406f-a694-b3d1d4e79972"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลประเมินการรับน้ำมันบริษัทของสถานีบริการ PTF"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="13cdca1d-fd27-4fa4-aa39-eb69aafae8db">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_AUDIT_FRANCHISE_PTF})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["จำนวนPTFที่เข้าตรวจ"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{total}]]></valueExpression>
+								</categorySeries>
+								<categorySeries>
+									<seriesExpression><![CDATA["จำนวนPTFที่รับน้ำมันบริษัท"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{num}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="true">
+								<plot labelRotation="67.0">
+									<seriesColor seriesOrder="0" color="#4B88CB"/>
+									<seriesColor seriesOrder="1" color="#E66826"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</itemLabel>
+								<categoryAxisFormat labelRotation="67.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวน PTF"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat tickLabelMask="#,##0.##">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+			<multiAxisChart>
+				<chart evaluationTime="Report">
+					<reportElement x="289" y="375" width="286" height="214" uuid="f546d289-b2e4-4999-8181-6274e4941b66">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<chartTitle>
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+						<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพรายเขต"]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartSubtitle>
+					<chartLegend>
+						<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+					</chartLegend>
+				</chart>
+				<multiAxisPlot>
+					<plot>
+						<seriesColor seriesOrder="0" color="#54A4CC"/>
+						<seriesColor seriesOrder="1" color="#E89E09"/>
+					</plot>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart evaluationTime="Report">
+								<reportElement key="" x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="d6b13401-f91e-4cae-9013-7f11c6812036"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพรายเขต"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="4fa9142e-452c-4abb-a2e4-ed27851614d4">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_OIL_STATION})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["% ผ่าน spec"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="#949494"/>
+								</plot>
+								<categoryAxisLabelExpression><![CDATA["เขต"]]></categoryAxisLabelExpression>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["% ผ่าน spec"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement key="invisible" x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="0c8d1e20-dbbe-4c0b-8b93-178f7ace504d"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพรายเขต"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="df88b4c3-e8c1-47f5-a1c2-2ca8f543de41">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_OIL_STATION})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA[""]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{perCent}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="false" isShowTickMarks="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="rgba(255, 255, 255, 0.0)"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK"/>
+								</itemLabel>
+								<categoryAxisFormat>
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisFormat>
+									<axisFormat axisLineColor="#FFFFFF">
+										<labelFont>
+											<font fontName="TH SarabunPSK"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" isBold="false"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+								<rangeAxisMinValueExpression><![CDATA[0]]></rangeAxisMinValueExpression>
+								<rangeAxisMaxValueExpression><![CDATA[200]]></rangeAxisMaxValueExpression>
+							</barPlot>
+						</barChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="4d0e8bff-cc04-46ba-97c0-724eb667bd40"/>
+								<chartTitle color="#000000">
+									<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+									<titleExpression><![CDATA["ผลการตรวจสอบคุณภาพรายเขต"]]></titleExpression>
+								</chartTitle>
+								<chartSubtitle color="#000000">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartSubtitle>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF">
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</chartLegend>
+							</chart>
+							<categoryDataset>
+								<dataset resetType="Report">
+									<datasetRun subDataset="reportAudit" uuid="f4f971a6-769e-4dad-a308-9993edfc41da">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{DATA_OIL_STATION})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["จำนวน PTC"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{category}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{total}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot isShowLabels="true" isShowTickLabels="true" isShowTickMarks="true">
+								<plot labelRotation="67.0">
+									<seriesColor seriesOrder="0" color="#4B88CB"/>
+									<seriesColor seriesOrder="1" color="#E66826"/>
+								</plot>
+								<itemLabel>
+									<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+								</itemLabel>
+								<categoryAxisFormat labelRotation="67.0">
+									<axisFormat>
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["จำนวนPTC"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat tickLabelMask="#,##0.##">
+										<labelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</labelFont>
+										<tickLabelFont>
+											<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+										</tickLabelFont>
+									</axisFormat>
+								</valueAxisFormat>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+		</band>
+	</summary>
+</jasperReport>

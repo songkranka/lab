@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2021-02-08T11:39:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LTR_T" pageWidth="712" pageHeight="792" whenNoDataType="BlankPage" columnWidth="672" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="1027da8a-60fb-4e91-b68b-a5dc9ed9cb8b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="480"/>
+	<subDataset name="dataset1" uuid="093fd1da-ceae-47fc-9883-3f7f8c273a06"/>
+	<parameter name="IMG_RP_BY" class="java.lang.String"/>
+	<parameter name="IMG_AP_BY" class="java.lang.String"/>
+	<parameter name="IMG_1" class="java.lang.String"/>
+	<parameter name="IMG_2" class="java.lang.String"/>
+	<field name="LTR_TO" class="java.lang.String"/>
+	<field name="LTR_CC" class="java.lang.String"/>
+	<field name="LTR_PRODUCT" class="java.lang.String"/>
+	<field name="LTR_DATE" class="java.lang.String"/>
+	<field name="LTR_DATE_EX" class="java.lang.String"/>
+	<field name="LTR_REPORT" class="java.lang.String"/>
+	<field name="LTR_CODE_NO" class="java.lang.String"/>
+	<field name="LTR_VESSEL" class="java.lang.String"/>
+	<field name="LTR_REF" class="java.lang.String"/>
+	<field name="P_HEAD_TEST_ITEMS" class="java.lang.String"/>
+	<field name="P_HEAD_UNIT" class="java.lang.String"/>
+	<field name="P_HEAD_TEST_METHOD" class="java.lang.String"/>
+	<field name="P_HEAD_SPECS" class="java.lang.String"/>
+	<field name="P_HEAD_TEST_RESULT" class="java.lang.String"/>
+	<field name="LIST_LABEL" class="java.util.List">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LABEL_TEST_ITEM_1" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_2" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_3" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_4" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_5" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_6" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_7" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_8" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_9" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_10" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_11" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_12" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_13" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_14" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_15" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_16" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_17" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_18" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_19" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_20" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_21" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_22" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_23" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_24" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_25" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_26" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_27" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_28" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_29" class="java.lang.String"/>
+	<field name="LABEL_TEST_ITEM_30" class="java.lang.String"/>
+	<field name="V_UNIT_1" class="java.lang.String"/>
+	<field name="V_UNIT_2" class="java.lang.String"/>
+	<field name="V_UNIT_3" class="java.lang.String"/>
+	<field name="V_UNIT_4" class="java.lang.String"/>
+	<field name="V_UNIT_5" class="java.lang.String"/>
+	<field name="V_UNIT_6" class="java.lang.String"/>
+	<field name="V_UNIT_7" class="java.lang.String"/>
+	<field name="V_UNIT_8" class="java.lang.String"/>
+	<field name="V_UNIT_9" class="java.lang.String"/>
+	<field name="V_UNIT_10" class="java.lang.String"/>
+	<field name="V_UNIT_11" class="java.lang.String"/>
+	<field name="V_UNIT_12" class="java.lang.String"/>
+	<field name="V_UNIT_13" class="java.lang.String"/>
+	<field name="V_UNIT_14" class="java.lang.String"/>
+	<field name="V_UNIT_15" class="java.lang.String"/>
+	<field name="V_UNIT_16" class="java.lang.String"/>
+	<field name="V_UNIT_17" class="java.lang.String"/>
+	<field name="V_UNIT_18" class="java.lang.String"/>
+	<field name="V_UNIT_19" class="java.lang.String"/>
+	<field name="V_UNIT_20" class="java.lang.String"/>
+	<field name="V_UNIT_21" class="java.lang.String"/>
+	<field name="V_UNIT_22" class="java.lang.String"/>
+	<field name="V_UNIT_23" class="java.lang.String"/>
+	<field name="V_UNIT_24" class="java.lang.String"/>
+	<field name="V_UNIT_25" class="java.lang.String"/>
+	<field name="V_UNIT_26" class="java.lang.String"/>
+	<field name="V_UNIT_27" class="java.lang.String"/>
+	<field name="V_UNIT_28" class="java.lang.String"/>
+	<field name="V_UNIT_29" class="java.lang.String"/>
+	<field name="V_UNIT_30" class="java.lang.String"/>
+	<field name="V_METHOD_1" class="java.lang.String"/>
+	<field name="V_METHOD_2" class="java.lang.String"/>
+	<field name="V_METHOD_3" class="java.lang.String"/>
+	<field name="V_METHOD_4" class="java.lang.String"/>
+	<field name="V_METHOD_5" class="java.lang.String"/>
+	<field name="V_METHOD_6" class="java.lang.String"/>
+	<field name="V_METHOD_7" class="java.lang.String"/>
+	<field name="V_METHOD_8" class="java.lang.String"/>
+	<field name="V_METHOD_9" class="java.lang.String"/>
+	<field name="V_METHOD_10" class="java.lang.String"/>
+	<field name="V_METHOD_11" class="java.lang.String"/>
+	<field name="V_METHOD_12" class="java.lang.String"/>
+	<field name="V_METHOD_13" class="java.lang.String"/>
+	<field name="V_METHOD_14" class="java.lang.String"/>
+	<field name="V_METHOD_15" class="java.lang.String"/>
+	<field name="V_METHOD_16" class="java.lang.String"/>
+	<field name="V_METHOD_17" class="java.lang.String"/>
+	<field name="V_METHOD_18" class="java.lang.String"/>
+	<field name="V_METHOD_19" class="java.lang.String"/>
+	<field name="V_METHOD_20" class="java.lang.String"/>
+	<field name="V_METHOD_21" class="java.lang.String"/>
+	<field name="V_METHOD_22" class="java.lang.String"/>
+	<field name="V_METHOD_23" class="java.lang.String"/>
+	<field name="V_METHOD_24" class="java.lang.String"/>
+	<field name="V_METHOD_25" class="java.lang.String"/>
+	<field name="V_METHOD_26" class="java.lang.String"/>
+	<field name="V_METHOD_27" class="java.lang.String"/>
+	<field name="V_METHOD_28" class="java.lang.String"/>
+	<field name="V_METHOD_29" class="java.lang.String"/>
+	<field name="V_METHOD_30" class="java.lang.String"/>
+	<field name="V_SPECS_1" class="java.lang.String"/>
+	<field name="V_SPECS_2" class="java.lang.String"/>
+	<field name="V_SPECS_3" class="java.lang.String"/>
+	<field name="V_SPECS_4" class="java.lang.String"/>
+	<field name="V_SPECS_5" class="java.lang.String"/>
+	<field name="V_SPECS_6" class="java.lang.String"/>
+	<field name="V_SPECS_7" class="java.lang.String"/>
+	<field name="V_SPECS_8" class="java.lang.String"/>
+	<field name="V_SPECS_9" class="java.lang.String"/>
+	<field name="V_SPECS_10" class="java.lang.String"/>
+	<field name="V_SPECS_11" class="java.lang.String"/>
+	<field name="V_SPECS_12" class="java.lang.String"/>
+	<field name="V_SPECS_13" class="java.lang.String"/>
+	<field name="V_SPECS_14" class="java.lang.String"/>
+	<field name="V_SPECS_15" class="java.lang.String"/>
+	<field name="V_SPECS_16" class="java.lang.String"/>
+	<field name="V_SPECS_17" class="java.lang.String"/>
+	<field name="V_SPECS_18" class="java.lang.String"/>
+	<field name="V_SPECS_19" class="java.lang.String"/>
+	<field name="V_SPECS_20" class="java.lang.String"/>
+	<field name="V_SPECS_21" class="java.lang.String"/>
+	<field name="V_SPECS_22" class="java.lang.String"/>
+	<field name="V_SPECS_23" class="java.lang.String"/>
+	<field name="V_SPECS_24" class="java.lang.String"/>
+	<field name="V_SPECS_25" class="java.lang.String"/>
+	<field name="V_SPECS_26" class="java.lang.String"/>
+	<field name="V_SPECS_27" class="java.lang.String"/>
+	<field name="V_SPECS_28" class="java.lang.String"/>
+	<field name="V_SPECS_29" class="java.lang.String"/>
+	<field name="V_SPECS_30" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_1" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_2" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_3" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_4" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_5" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_6" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_7" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_8" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_9" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_10" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_11" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_12" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_13" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_14" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_15" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_16" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_17" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_18" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_19" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_20" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_21" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_22" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_23" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_24" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_25" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_26" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_27" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_28" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_29" class="java.lang.String"/>
+	<field name="V_TEST_RESULT_30" class="java.lang.String"/>
+	<field name="P_RESULT_TEST" class="java.lang.String"/>
+	<field name="P_HEAD_UNCERTAINTY" class="java.lang.String"/>
+	<field name="P_HEAD_RANDOM_DATE" class="java.lang.String"/>
+	<field name="V_REPORTED_BY" class="java.lang.String"/>
+	<field name="V_REPORTED_DATE" class="java.lang.String"/>
+	<field name="V_APPROVE_BY" class="java.lang.String"/>
+	<field name="V_APPROVE_DATE" class="java.lang.String"/>
+	<field name="QOC_ADDRESS" class="java.lang.String"/>
+	<field name="ISSUE_DATE" class="java.lang.String"/>
+	<field name="RECEIVE_DATE" class="java.lang.String"/>
+	<field name="PRODUCT_DESC" class="java.lang.String"/>
+	<field name="NON_PASS" class="java.lang.String"/>
+	<field name="V_UNCERT1" class="java.lang.String"/>
+	<field name="V_UNCERT2" class="java.lang.String"/>
+	<field name="V_UNCERT3" class="java.lang.String"/>
+	<field name="V_UNCERT4" class="java.lang.String"/>
+	<field name="V_UNCERT5" class="java.lang.String"/>
+	<field name="V_UNCERT6" class="java.lang.String"/>
+	<field name="V_UNCERT7" class="java.lang.String"/>
+	<field name="V_UNCERT8" class="java.lang.String"/>
+	<field name="V_UNCERT9" class="java.lang.String"/>
+	<field name="V_UNCERT10" class="java.lang.String"/>
+	<field name="V_UNCERT11" class="java.lang.String"/>
+	<field name="V_UNCERT12" class="java.lang.String"/>
+	<field name="V_UNCERT13" class="java.lang.String"/>
+	<field name="V_UNCERT14" class="java.lang.String"/>
+	<field name="V_UNCERT15" class="java.lang.String"/>
+	<field name="V_UNCERT16" class="java.lang.String"/>
+	<field name="V_UNCERT17" class="java.lang.String"/>
+	<field name="V_UNCERT18" class="java.lang.String"/>
+	<field name="V_UNCERT19" class="java.lang.String"/>
+	<field name="V_UNCERT20" class="java.lang.String"/>
+	<field name="V_UNCERT21" class="java.lang.String"/>
+	<field name="V_UNCERT22" class="java.lang.String"/>
+	<field name="V_UNCERT23" class="java.lang.String"/>
+	<field name="V_UNCERT24" class="java.lang.String"/>
+	<field name="V_UNCERT25" class="java.lang.String"/>
+	<field name="V_UNCERT26" class="java.lang.String"/>
+	<field name="V_UNCERT27" class="java.lang.String"/>
+	<field name="V_UNCERT28" class="java.lang.String"/>
+	<field name="V_UNCERT29" class="java.lang.String"/>
+	<field name="V_UNCERT30" class="java.lang.String"/>
+	<variable name="variable1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="670" height="44" uuid="3c6658fa-c80d-420f-9cd2-660c2fb70bd7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="33" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PTG  ENERGY  PUBLIC  CO., LTD.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="169" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="10" width="670" height="158" uuid="d297cd86-e043-4f86-b804-70899f5d27ce"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="670" height="30" uuid="1a6bb939-24f8-4c37-9c80-d74302f48eb8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="25" isBold="true"/>
+					</textElement>
+					<text><![CDATA[LABORATORY TEST REPORT ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="367" y="103" width="272" height="14" uuid="4a2f20aa-3fb2-4db0-ac46-9183975e0d7b">
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{PRODUCT_DESC}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="359" y="87" width="8" height="16" uuid="dca8adc4-8faf-497f-9e0a-798984b02f13">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="312" y="39" width="47" height="18" uuid="09197264-dec5-401e-a724-09fcd9fb6d92"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CC ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="74" y="63" width="46" height="16" uuid="59bf3653-3578-41e8-82ce-e229eef132e9">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Product       ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="130" y="87" width="168" height="16" uuid="2c73c7e7-3a91-4584-b3f2-a365686e916b"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_VESSEL}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="359" y="63" width="9" height="16" uuid="c2132fd1-3e9e-42f3-8cee-47187f5c1565">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="312" y="121" width="47" height="16" uuid="177615e1-cc02-4101-bf29-69130fbf3ca2">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Code No.            ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="120" y="63" width="10" height="16" uuid="8e8a2ffd-c876-45f7-bbde-97a6e3c0fa3b">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="130" y="63" width="168" height="16" uuid="e761c6d7-f729-4e46-884a-f0d8581d694b"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_PRODUCT}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="130" y="39" width="168" height="18" uuid="be456218-ef71-4df8-be6c-bfe4bfb46349"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_TO}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="120" y="39" width="10" height="18" uuid="67d2e531-fd56-459a-b779-cc1c7f24588b">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="120" y="87" width="10" height="16" uuid="cd732701-fdae-4e88-8266-5f44e15d1d39">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="359" y="121" width="8" height="16" uuid="6a058131-cc72-490c-830c-7990e0bfe30a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="121" y="120" width="9" height="16" uuid="297e4e23-d5dd-49c2-b611-51c33405bf41">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="367" y="121" width="139" height="16" uuid="1b11292b-e815-4912-a432-eabc59c16ee3">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_CODE_NO}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="312" y="87" width="47" height="16" uuid="fce745b5-1726-4eee-bac1-f4a8bdee9fe6"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ref. ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="130" y="120" width="168" height="16" uuid="fe8c5253-7873-49e5-9738-7b26b91f0546"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_REPORT}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="74" y="87" width="46" height="16" uuid="0456955f-d536-4b05-aec0-79d7d784d805">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Vessel   ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="74" y="120" width="47" height="16" uuid="bf76c38e-2347-4b23-9041-afbc616730e7"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Reports]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="312" y="63" width="47" height="16" uuid="2594158b-d485-4ee2-8ae4-2886c522ac55"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Date     ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="359" y="39" width="8" height="18" uuid="aee52211-6f27-43d6-8841-31c43d8d5095">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="74" y="39" width="46" height="18" uuid="d2faf442-0700-40d0-a26f-c0eb5c8cbe1f"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[To        ]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="367" y="39" width="254" height="18" uuid="45e8052d-e2c1-4337-87d0-a5ee76ee4ec0"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_CC}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="368" y="63" width="253" height="16" uuid="324ab31b-afb2-426a-9ad3-cc01e94268be"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_DATE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="367" y="87" width="254" height="16" uuid="e7b4b4b0-e60a-4db3-b9ab-885d393329d8"/>
+					<textElement>
+						<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LTR_REF} +" ; วันที่เก็บตัวอย่าง " +$F{LTR_DATE_EX}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="179" height="30" uuid="ece48b48-c2c8-4265-9e21-686917e381ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c98c405-590c-489d-9d0f-bf7b855dd2e4"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_HEAD_TEST_ITEMS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="85" height="30" uuid="3be62626-33f2-496a-b163-06474df00235">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c491f15d-f540-4144-8c3b-f1d330d880af"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_HEAD_SPECS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="70" height="30" uuid="a7450461-95dd-447c-a0fb-3ce2456fe968">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f324e87f-a403-46eb-85d0-4d981aaad7e1"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_HEAD_UNIT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="572" y="0" width="98" height="30" uuid="4be23ecc-f917-43ac-9521-6bf49a44f8eb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="86ae7973-6224-4f2a-9b7f-584277d5b845"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Uncertainty"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="92" height="30" uuid="eca32da4-0a89-4007-bdf1-21b7339e6252">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="86ae7973-6224-4f2a-9b7f-584277d5b845"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_HEAD_TEST_RESULT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="250" y="0" width="145" height="30" uuid="abbda4f6-ae31-4f59-a6d9-9dcd55a0f819">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8af355e3-fbe0-474a-9b31-a1ec77eb6c99"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{P_HEAD_TEST_METHOD}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="374" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="670" height="374" uuid="9bc3c0f1-1fda-441e-a9cc-0f1b3deb01e6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<line>
+					<reportElement x="179" y="-30" width="1" height="403" uuid="654f6a08-5251-4116-a4e1-6b0fd18a0dea"/>
+				</line>
+				<line>
+					<reportElement x="250" y="-30" width="1" height="403" uuid="92fb2422-c9bd-455c-ba7a-a16ca3566199">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="395" y="-30" width="1" height="403" uuid="52f619e3-3988-4804-9ace-1805ce3e9082">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="479" y="-30" width="1" height="403" uuid="a0a5c95f-6f72-4389-9d4e-b5ba0127009a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="572" y="-30" width="1" height="403" uuid="cad5b866-1310-4d0b-a8ac-f0c4a3a07ff4">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="166" width="59" height="13" uuid="56220715-349b-4d3f-b801-3d8e96e4af1f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af17d1c4-28e0-4adf-85a4-5f6d05e27cef"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="88" width="54" height="13" uuid="49e59278-05fe-4b67-b092-e4324e07e4b3">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="192" width="134" height="13" uuid="32f7632c-62df-455b-971f-b9dfd29c7303">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e8cbf5f-0f87-4442-ae01-4bf84fe2ff1f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="88" width="59" height="13" uuid="0db4aa34-63f9-4119-a882-4100a921ffbe">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a635135-6f24-41bf-b7b9-8b4e4c5eb685"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="283" width="59" height="13" uuid="90bdbaf7-1e4f-4428-bc80-a71d1d48cacc">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="918e6ff4-5331-4c63-8602-2e5117e80f89"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="114" width="59" height="13" uuid="3a0ca118-6ab7-494b-a7e0-169fa9ebb206">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2f84a11-87de-4352-b5d9-daea72e328c6"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="179" width="59" height="13" uuid="0d504f66-712f-45f8-bf6a-0a35cc97519f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be355c3f-9dc7-48a9-a17d-dac1fe84ac99"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="270" width="59" height="13" uuid="247005c3-6355-47b0-88e4-dc04eba5b790">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="132092b2-a3bf-43c8-8681-25d294e3fe4d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="36" width="59" height="13" uuid="31ff74a8-3510-4c41-b8f2-ae2f24fe994a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8788703c-6545-466e-b02a-d6540d6ebf25"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="140" width="59" height="13" uuid="afdf9ef8-c8d2-4c6c-876f-47351ab0a8bb">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7e61650-e2d2-45b3-9873-96ff55a9db60"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="244" width="134" height="13" uuid="61c1bcbd-26ba-4924-a21a-dd0cccebf192">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63fcc3fe-aecc-4e2f-8766-daae8a58faa7"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="166" width="152" height="13" uuid="5aad62e1-0c02-4718-b8e3-da7c6a852884">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="10" width="59" height="13" uuid="405ed85d-87f2-4e84-b857-6959095cfb2b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="322" width="152" height="13" uuid="30d49acb-8131-40e9-9503-a551058eb0df">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="192" width="59" height="13" uuid="1164baba-8938-47d6-b5e7-3cbda8fe343f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e8cbf5f-0f87-4442-ae01-4bf84fe2ff1f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="10" width="54" height="13" uuid="3507ca2b-6449-487a-9732-f8b4d85bd87d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="192" width="152" height="13" uuid="f25c53fa-4bf6-481d-a733-3f3e052d14f4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="75" width="134" height="13" uuid="71842776-a66c-481d-ba14-847e93679213">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e56bca7-2310-4462-b79e-6808e7d7388c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="127" width="59" height="13" uuid="229a3edf-3377-4c95-a903-6700fa66c3af">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0619fbc8-ca96-4679-82f2-e737fc21a82d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="270" width="54" height="13" uuid="79713332-b721-442c-826c-292235532794">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="49" width="59" height="13" uuid="2f636473-bbf2-4689-8339-be6933f1783b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5adf31cb-ed7d-4378-b94e-7f017cb55253"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="153" width="59" height="13" uuid="9f1d91e6-580f-40c1-96f4-aa3c5dd5f5bd">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d67bf51b-0608-44bb-9633-d5f968bc442f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="218" width="59" height="13" uuid="3c28ec29-f30c-4567-b42d-03a165957307">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43ab6947-8db1-47f2-8c94-aaf79f8e0129"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="23" width="134" height="13" uuid="b29e4fb1-11de-400a-a261-34b33781b5e0">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4f67e3-1721-4f22-b3f1-37c7e63149ca"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_2}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="36" width="59" height="13" uuid="f136baa5-1f39-44df-903c-fd189561c0ae">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8788703c-6545-466e-b02a-d6540d6ebf25"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="23" width="54" height="13" uuid="67439b4d-7283-4266-b460-9e00c6751a04">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_2}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="62" width="54" height="13" uuid="d12771b2-8854-48e9-842d-943bfac285a3">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="127" width="54" height="13" uuid="b083b7b0-a7f9-43d9-85b2-c55e0608ca0e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="179" width="152" height="13" uuid="130577d4-13d3-4499-894e-49f3df75f611">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="75" width="152" height="13" uuid="6e3f4470-48f2-41f5-ac44-0e0eb46094bd">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="296" width="59" height="13" uuid="7d299efb-5fd9-418c-b0d7-cd6f9681583b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd291ffd-0c9f-426d-bc3a-50b9c0a5d384"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="153" width="59" height="13" uuid="90c9b248-0928-4447-b2ea-1e663e9f5d7d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d67bf51b-0608-44bb-9633-d5f968bc442f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="36" width="59" height="13" uuid="c7ee2f15-01c8-4ade-94c9-ba68a3a3121b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8788703c-6545-466e-b02a-d6540d6ebf25"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="231" width="59" height="13" uuid="81c8d50f-b269-42a7-8d72-d20d528a1daf">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d9dded7-76b4-4868-a0e4-94c1b96d89be"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="270" width="152" height="13" uuid="b4f309c5-211c-4a6a-ad28-c82ed9d40b96">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="257" width="59" height="13" uuid="8fe1049b-afc4-4cd1-9f2d-d2df26eb972a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b78116e9-4650-4fa1-ac10-dfe6d802bfdb"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="10" width="134" height="13" uuid="0d78c056-9353-4654-ba87-a59f5de02893">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="114" width="152" height="13" uuid="802c4ab2-ae18-4827-898d-76ffacb44b32">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="101" width="59" height="13" uuid="9b33cad2-c720-42cb-9d27-6234fed76974">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dceb734-0527-47fa-a662-1c4488cdc3bc"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="257" width="59" height="13" uuid="5a5eb7bd-2fcc-4d71-8f08-caffd42e0f17">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b78116e9-4650-4fa1-ac10-dfe6d802bfdb"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="75" width="59" height="13" uuid="c5135895-35d0-4106-89e6-b493640913ea">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e56bca7-2310-4462-b79e-6808e7d7388c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="296" width="134" height="13" uuid="09f1798a-8f61-4121-98cd-3beb877a420c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd291ffd-0c9f-426d-bc3a-50b9c0a5d384"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="62" width="59" height="13" uuid="cdcd71cb-74be-46ec-940a-55f5012627ba">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fb8e9d4-a721-4434-a8ee-3c142d3fe906"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="114" width="59" height="13" uuid="71c42970-210a-41ca-9830-05d0f3d8cde5">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2f84a11-87de-4352-b5d9-daea72e328c6"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="101" width="54" height="13" uuid="faff548c-2d55-4229-af28-dd656c06cf12">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="101" width="152" height="13" uuid="ed0fd3b8-a395-4094-831c-efd7b9197887">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="88" width="59" height="13" uuid="eb8120e6-04c6-4a56-a96d-9ff4e0d47e28">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a635135-6f24-41bf-b7b9-8b4e4c5eb685"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="166" width="134" height="13" uuid="593857fd-a9fa-410f-aaa7-a4df71e17592">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af17d1c4-28e0-4adf-85a4-5f6d05e27cef"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="114" width="59" height="13" uuid="3963742a-681c-43c9-a59e-5671c17a190b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2f84a11-87de-4352-b5d9-daea72e328c6"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="296" width="59" height="13" uuid="65950dea-98db-4b42-9020-a31b404156d9">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd291ffd-0c9f-426d-bc3a-50b9c0a5d384"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="62" width="134" height="13" uuid="877129bc-f82a-433c-ba21-95f4a5018482">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fb8e9d4-a721-4434-a8ee-3c142d3fe906"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="179" width="59" height="13" uuid="bf2db5d3-93bc-4a1e-8664-95875eed58c7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be355c3f-9dc7-48a9-a17d-dac1fe84ac99"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="244" width="59" height="13" uuid="df1d18d5-b5cd-4f5f-8da1-23876e62354a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63fcc3fe-aecc-4e2f-8766-daae8a58faa7"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="244" width="152" height="13" uuid="3fc8298f-700f-4f1a-9738-1ad822ccef1e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="322" width="59" height="13" uuid="39233e7f-a72a-4ebb-bc09-3f30755ab985">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42fa445c-dceb-4c7d-a196-48ade0f2a016"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="283" width="59" height="13" uuid="9fbcc167-6bea-4ffc-92fa-16419ccbbaaf">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="918e6ff4-5331-4c63-8602-2e5117e80f89"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="114" width="54" height="13" uuid="acf8eafa-cbb8-4e9d-9428-7e6e179b697c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="231" width="134" height="13" uuid="c9809cff-61cb-462e-9ad1-f272dbead97e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d9dded7-76b4-4868-a0e4-94c1b96d89be"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="88" width="59" height="13" uuid="47cdd5d4-ce1f-4fa7-9bce-1127ee3ae6cd">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a635135-6f24-41bf-b7b9-8b4e4c5eb685"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="101" width="134" height="13" uuid="8418ea67-9dda-4023-aff2-39f4ecf06660">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dceb734-0527-47fa-a662-1c4488cdc3bc"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="166" width="54" height="13" uuid="f66d8518-819f-4669-bde6-4f9bed0d4ada">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="322" width="59" height="13" uuid="28f74f9b-a9b2-4f9c-96e6-2dfda4bdc97c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42fa445c-dceb-4c7d-a196-48ade0f2a016"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="36" width="54" height="13" uuid="f3e888f4-70d6-4e17-a5df-15c7f38d420e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="296" width="59" height="13" uuid="b3596294-7145-4ac6-b750-3d088e8dd653">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd291ffd-0c9f-426d-bc3a-50b9c0a5d384"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="62" width="59" height="13" uuid="a21063ca-94c0-4f63-b22c-b01105054a62">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fb8e9d4-a721-4434-a8ee-3c142d3fe906"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="218" width="59" height="13" uuid="e1c26970-60dd-4710-a300-c617e1b35072">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43ab6947-8db1-47f2-8c94-aaf79f8e0129"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="140" width="134" height="13" uuid="23f9cb13-b078-4f28-af4d-3f520d63909a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7e61650-e2d2-45b3-9873-96ff55a9db60"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="140" width="59" height="13" uuid="2ebb7ead-0f3c-4cc7-ae81-4fa0a5c86876">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7e61650-e2d2-45b3-9873-96ff55a9db60"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="36" width="134" height="13" uuid="8bbba594-ab98-4c18-a5f1-27c25a3b29d0">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8788703c-6545-466e-b02a-d6540d6ebf25"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="192" width="59" height="13" uuid="9e1cf58b-6950-4c69-b5b4-f2e64d1bb8d3">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e8cbf5f-0f87-4442-ae01-4bf84fe2ff1f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="10" width="152" height="13" uuid="d0257d59-ca53-408a-a530-b4a3538ff77f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="205" width="59" height="13" uuid="2fe7cbdf-6695-47dc-b58e-1eea80d03235">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de15491c-44fa-4661-bbc8-453c201338c8"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="231" width="54" height="13" uuid="f4d4862e-c747-4ed5-8e3b-6c89e6ce2609">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="49" width="54" height="13" uuid="c6bb8c6a-cc05-4acc-8b02-507fdc7a65ca">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="62" width="152" height="13" uuid="4b45c3ca-b3e9-454f-b175-a34a74c7332c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="283" width="54" height="13" uuid="4eda74d7-5dce-4ecf-8485-07cca6e5b288">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="192" width="54" height="13" uuid="0cab2c12-575b-4935-bbf4-b467a73716f1">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="257" width="54" height="13" uuid="413e2b4f-2662-4d74-ad85-6dd99c23c7d4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="88" width="152" height="13" uuid="7108f88b-282f-4969-b714-afa7e109465f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="283" width="152" height="13" uuid="b6748eac-55e4-4c86-93ff-01a72a3a480a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="153" width="59" height="13" uuid="2f5568f9-47da-4607-812a-d05876149b43">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d67bf51b-0608-44bb-9633-d5f968bc442f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="257" width="134" height="13" uuid="f4400df6-c720-407c-aa93-246f77c2ea9a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b78116e9-4650-4fa1-ac10-dfe6d802bfdb"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="49" width="59" height="13" uuid="f05a54a7-19f9-4f85-9371-3cf194e64e87">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5adf31cb-ed7d-4378-b94e-7f017cb55253"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="23" width="59" height="13" uuid="0c9e6ea2-a386-433a-9c4e-503fe188d630">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4f67e3-1721-4f22-b3f1-37c7e63149ca"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT2}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="205" width="152" height="13" uuid="a9be0637-9d4c-4170-823a-3559ce7ec468">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="140" width="54" height="13" uuid="39ac4f53-e7e1-4463-8475-0d15a1e1c367">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="114" width="134" height="13" uuid="71ee3eb7-b611-483e-90c2-b02632faff58">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2f84a11-87de-4352-b5d9-daea72e328c6"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_9}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="166" width="59" height="13" uuid="3f445239-656a-4ddc-951c-63f4b004b8ce">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af17d1c4-28e0-4adf-85a4-5f6d05e27cef"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="309" width="54" height="13" uuid="05938a66-a7d5-45fb-9138-485bc5271bbc">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="140" width="59" height="13" uuid="a90f44f1-dcc2-4153-84bf-131f0fa6dde4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c7e61650-e2d2-45b3-9873-96ff55a9db60"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="322" width="54" height="13" uuid="26dbf4c4-4022-435c-857a-24d894776b4f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="127" width="59" height="13" uuid="ccdba303-8848-49d4-8bab-1c10f39c4dd5">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0619fbc8-ca96-4679-82f2-e737fc21a82d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="309" width="59" height="13" uuid="57199674-db76-4bbd-8c04-11438fbe59b8">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9458f95e-2203-4439-b619-b9fc5206bbd2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="10" width="59" height="13" uuid="618d5394-661f-4661-890a-cf3910f13b80">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="257" width="59" height="13" uuid="59a391e1-7abf-4d88-bb4c-19a6523153c1">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b78116e9-4650-4fa1-ac10-dfe6d802bfdb"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="153" width="152" height="13" uuid="a1771a82-ad6b-44d3-a2ad-9c4ab638f516">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="23" width="59" height="13" uuid="a83fe25f-ad80-4b00-a09c-a86abdf02fbe">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4f67e3-1721-4f22-b3f1-37c7e63149ca"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_2}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="244" width="54" height="13" uuid="24f1571e-b4f3-4f9a-99ae-568d387a806a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="309" width="152" height="13" uuid="63ad8f87-b7b6-4a9f-b730-17eeed920827">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="153" width="134" height="13" uuid="0c4ed2c4-4e11-4aa7-b5fb-b12855dca966">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d67bf51b-0608-44bb-9633-d5f968bc442f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="205" width="59" height="13" uuid="e344e349-a744-4b7d-aa7b-580fc4c5ae48">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de15491c-44fa-4661-bbc8-453c201338c8"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="283" width="59" height="13" uuid="0c063da9-abf7-4793-9ea6-7791dbc73266">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="918e6ff4-5331-4c63-8602-2e5117e80f89"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="153" width="54" height="13" uuid="a611a78f-8f19-499d-b360-edf6dc312b2e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_12}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="192" width="59" height="13" uuid="2e8a5886-5ae6-48f9-82b8-1a47f2b16e3f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e8cbf5f-0f87-4442-ae01-4bf84fe2ff1f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_15}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="244" width="59" height="13" uuid="403a8cc1-9da8-498b-af1f-8a34295713ff">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63fcc3fe-aecc-4e2f-8766-daae8a58faa7"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="205" width="134" height="13" uuid="338f3a0e-f6b8-423d-bc38-ea1d87dc041e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de15491c-44fa-4661-bbc8-453c201338c8"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="322" width="59" height="13" uuid="bf0b8748-ea48-4d17-91ff-e3dbaa7ef2d0">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42fa445c-dceb-4c7d-a196-48ade0f2a016"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="205" width="54" height="13" uuid="e9f9f658-715d-4105-a918-1a9faf9d18c9">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="270" width="59" height="13" uuid="5965f770-7a81-4d0b-af8f-03672d2c22e7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="132092b2-a3bf-43c8-8681-25d294e3fe4d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="179" width="54" height="13" uuid="6f752d48-5acf-4aa2-8728-9756f4f51482">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="244" width="59" height="13" uuid="41f47619-986c-4fb7-9623-4d8708915f2e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63fcc3fe-aecc-4e2f-8766-daae8a58faa7"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_19}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="309" width="134" height="13" uuid="e0b88408-c19d-4b05-9a30-7c0250912bed">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9458f95e-2203-4439-b619-b9fc5206bbd2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="75" width="54" height="13" uuid="36303138-cb53-4835-b617-3ba931316be9">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="231" width="59" height="13" uuid="7bb09219-bc5e-461d-9a93-0f3fa76b3e5d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d9dded7-76b4-4868-a0e4-94c1b96d89be"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="127" width="152" height="13" uuid="13351989-1a0a-4324-98f2-1b047d76b55f">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="231" width="152" height="13" uuid="a864ebb1-0bdc-460d-88da-5f6ad3288dee">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="101" width="59" height="13" uuid="082f5c85-f82f-46f4-b14e-a9e4bf2d404a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dceb734-0527-47fa-a662-1c4488cdc3bc"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="101" width="59" height="13" uuid="c877e58b-7c22-419e-9aa1-8d92028f147b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dceb734-0527-47fa-a662-1c4488cdc3bc"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT8}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="309" width="59" height="13" uuid="7a4bb807-e52e-47a4-8c88-4c48a1f2149e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9458f95e-2203-4439-b619-b9fc5206bbd2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="166" width="59" height="13" uuid="02ec58ba-a1f0-4f3f-ab4e-e6a077818c28">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="af17d1c4-28e0-4adf-85a4-5f6d05e27cef"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_13}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="231" width="59" height="13" uuid="d59f6fd3-bcd9-42e6-93bf-3f139056c39d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d9dded7-76b4-4868-a0e4-94c1b96d89be"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_18}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="49" width="152" height="13" uuid="016796b6-8d67-4fc9-801d-262d01d380c4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="296" width="152" height="13" uuid="54a1c689-148f-4181-ae31-e6a358adab67">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="218" width="59" height="13" uuid="7e9ff8a8-6608-4ed8-a316-5d34a000aa1e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43ab6947-8db1-47f2-8c94-aaf79f8e0129"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="270" width="59" height="13" uuid="9551c705-972e-4b77-87bc-dcd145060be9">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="132092b2-a3bf-43c8-8681-25d294e3fe4d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="62" width="59" height="13" uuid="ffb525a6-5e6f-4422-aceb-c46c7defe52c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5fb8e9d4-a721-4434-a8ee-3c142d3fe906"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_5}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="140" width="152" height="13" uuid="99fdec0e-307e-47bc-8826-5c2a8390a182">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_11}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="218" width="152" height="13" uuid="a7436326-d533-452a-a0a3-5fa246e30110">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="127" width="59" height="13" uuid="1b4b8d86-77d7-42aa-b0d8-f2fb5e6367ff">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0619fbc8-ca96-4679-82f2-e737fc21a82d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="179" width="134" height="13" uuid="017f3939-3a41-4baa-8e99-e641acd57bbe">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be355c3f-9dc7-48a9-a17d-dac1fe84ac99"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="179" width="59" height="13" uuid="adb23a6f-64c2-4205-9d52-83508c9afeac">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be355c3f-9dc7-48a9-a17d-dac1fe84ac99"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_14}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="205" width="59" height="13" uuid="4056ddb9-3a7c-49ab-ab1f-b32359dea48a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de15491c-44fa-4661-bbc8-453c201338c8"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT16}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="593" y="75" width="59" height="13" uuid="237b39e7-1f87-4ceb-b41e-6286e0233be1">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e56bca7-2310-4462-b79e-6808e7d7388c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNCERT6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="257" width="152" height="13" uuid="5497ca4c-e789-4d30-8b01-5ebe3d0311eb">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_20}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="296" width="54" height="13" uuid="e451630b-690e-4888-8984-0bc0dd63ec3e">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_23}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="75" width="59" height="13" uuid="e5f50e4f-76d4-43e8-b376-faacb1a25b58">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0e56bca7-2310-4462-b79e-6808e7d7388c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_6}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="127" width="134" height="13" uuid="17c72158-a621-4983-8a25-bdbc64f77d5d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0619fbc8-ca96-4679-82f2-e737fc21a82d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_10}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="36" width="152" height="13" uuid="0b1a2418-63ed-4354-a57f-60f1c9f2805d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_3}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="309" width="59" height="13" uuid="6e7a56ad-3b1e-416f-8982-481937dad468">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9458f95e-2203-4439-b619-b9fc5206bbd2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_24}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="49" width="134" height="13" uuid="b0551c7b-1ff7-4692-bc0c-1ae06b57068b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5adf31cb-ed7d-4378-b94e-7f017cb55253"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="49" width="59" height="13" uuid="19ea24df-7e14-4147-a9b3-a45122a869ab">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5adf31cb-ed7d-4378-b94e-7f017cb55253"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_4}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="88" width="134" height="13" uuid="a5a6469b-96bf-4d40-9c58-279af0ef3698">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a635135-6f24-41bf-b7b9-8b4e4c5eb685"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_7}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="408" y="10" width="59" height="13" uuid="532d29a2-15a2-4a7b-97e1-642ccacd088d">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_SPECS_1}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="218" width="134" height="13" uuid="ea04aada-0b56-4b3e-b717-94278e2a1d9a">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43ab6947-8db1-47f2-8c94-aaf79f8e0129"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="322" width="134" height="13" uuid="5836e3e6-c1ee-4c5c-b90a-fcb1bd4c1831">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42fa445c-dceb-4c7d-a196-48ade0f2a016"/>
+						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_25}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="283" width="134" height="13" uuid="c4f54907-88d0-4d02-a3ea-79f74f7fa926">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="918e6ff4-5331-4c63-8602-2e5117e80f89"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_22}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="187" y="218" width="54" height="13" uuid="4dee9bce-f699-435e-824d-e9f7033807c7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dd26101-ab9a-404a-905b-8814f3ce485e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_UNIT_17}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="11" y="23" width="152" height="13" uuid="210401d9-91f2-40e0-b1dc-5494119908ed">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd61d9b0-16ea-487b-b6d5-a0f988536ed9"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{LABEL_TEST_ITEM_2}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="256" y="270" width="134" height="13" uuid="39e9fcbc-ac99-4c8e-89b3-936c86320d93">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="132092b2-a3bf-43c8-8681-25d294e3fe4d"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_METHOD_21}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="497" y="23" width="59" height="13" uuid="8c302e28-5b17-4d02-9e54-9240d9e1e139">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd4f67e3-1721-4f22-b3f1-37c7e63149ca"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_TEST_RESULT_2}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="80">
+			<frame>
+				<reportElement x="0" y="0" width="670" height="80" uuid="9bec8758-e7a4-4db3-b06e-036ebe0eea9e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<staticText>
+					<reportElement x="90" y="44" width="48" height="14" uuid="4e152c9a-ba3f-4be0-9f8e-ffaec733d227"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DATE ]]></text>
+				</staticText>
+				<line>
+					<reportElement x="138" y="59" width="145" height="1" uuid="2e605e09-2349-4414-b6bf-649e2e362078"/>
+					<graphicElement>
+						<pen lineWidth="0.75" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="439" y="60" width="121" height="1" uuid="01dde653-6a9a-476a-921e-286d5b1e5214"/>
+					<graphicElement>
+						<pen lineWidth="0.75" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<textField>
+					<reportElement x="162" y="44" width="97" height="14" uuid="7b919f35-4e20-465d-ae63-f8fc24ab6fa1"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_REPORTED_DATE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="453" y="45" width="97" height="14" uuid="18548dcc-d2c7-402a-83a4-36050ccb33aa"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_APPROVE_DATE}]]></textFieldExpression>
+				</textField>
+				<image scaleImage="FillFrame" hAlign="Center" isLazy="true">
+					<reportElement x="183" y="3" width="58" height="19" uuid="52e34e4b-546c-4f1a-bbf7-cd22f5757e61"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+					<imageExpression><![CDATA[$P{IMG_RP_BY}]]></imageExpression>
+				</image>
+				<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" isLazy="true">
+					<reportElement x="474" y="2" width="58" height="19" uuid="9ae9a7cd-8866-4b71-8569-a5a11f43a4ec"/>
+					<imageExpression><![CDATA[$P{IMG_AP_BY}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="79" y="23" width="60" height="14" uuid="83ce9469-90cd-4c0e-8e9c-6f8da2be475e"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[REPORTED BY ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="154" y="23" width="113" height="14" uuid="7ba8be0f-1568-41bd-b9ab-14053a550401"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_REPORTED_BY}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="138" y="39" width="145" height="1" uuid="08849945-938b-49fd-9f3b-abcc0e5c564d"/>
+					<graphicElement>
+						<pen lineWidth="0.75" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="282" y="23" width="58" height="14" uuid="315a98a0-a612-4400-a490-80634dee2bc8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QA OFFICER]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="445" y="23" width="113" height="14" uuid="5306e6f8-2213-4575-8d49-09d3ba6417e2">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{V_APPROVE_BY}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="439" y="39" width="121" height="1" uuid="922bd161-0932-4a27-aaa9-8decf8012ac4"/>
+					<graphicElement>
+						<pen lineWidth="0.75" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="561" y="23" width="60" height="14" uuid="147a1149-7384-4615-85e0-5736b134011a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[QA MANAGER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="379" y="23" width="60" height="14" uuid="a51f2454-ac54-4ba1-a5a9-3f8d3ae74605"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[APPROVED BY ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="391" y="45" width="48" height="14" uuid="9f6cd1bf-35cf-4165-9978-a53f40f566f8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH SarabunPSK" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DATE ]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="1" width="74" height="19" uuid="6505e876-aaca-41d8-8c81-6bb6de91ef23"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECIEVED DATE :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="76" y="1" width="100" height="19" uuid="37ca0823-47fd-48d0-9f82-c09589903450">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LTR_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="574" y="36" width="97" height="17" uuid="f826150d-28fb-4d46-92df-8b788323ab90"/>
+				<textElement>
+					<font fontName="Tahoma" size="7"/>
+				</textElement>
+				<text><![CDATA[FM17025-053 Rev.01 01/01/21]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="REQUEST_NO" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="785e0e30-c51d-494d-a3b2-cf930951d9f0">
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="MyCollectiondDataSet" uuid="21c21097-86e7-4a4a-aae8-8355bc679fbf">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="labCode" class="java.lang.String"/>
+		<field name="type" class="java.lang.String"/>
+		<field name="product" class="java.lang.String"/>
+		<field name="ref" class="java.lang.String"/>
+		<field name="transportationSystem" class="java.lang.String"/>
+		<field name="collectionFormat" class="java.lang.String"/>
+		<field name="randomGroup" class="java.lang.String"/>
+		<field name="poNumber" class="java.lang.String"/>
+		<field name="poDate" class="java.lang.String"/>
+		<field name="doNumber" class="java.lang.String"/>
+		<field name="shipmentNo" class="java.lang.String"/>
+		<field name="no" class="java.lang.String"/>
+		<field name="subNo" class="java.lang.String"/>
+		<field name="meterNo" class="java.lang.String"/>
+		<field name="carNo" class="java.lang.String"/>
+		<field name="carLane" class="java.lang.String"/>
+		<field name="nameBoat" class="java.lang.String"/>
+		<field name="boatLaneP" class="java.lang.String"/>
+		<field name="boatLaneS" class="java.lang.String"/>
+		<field name="lotNo" class="java.lang.String"/>
+		<field name="randomDate" class="java.lang.String"/>
+		<field name="dateExpier" class="java.lang.String"/>
+		<field name="employeeCode" class="java.lang.String"/>
+		<field name="employeeName" class="java.lang.String"/>
+		<field name="dateCollect" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="CollectionBeanParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="request_number" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="request_number" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="1" width="110" height="30" uuid="c64e6134-7a0f-4df7-8529-ad1df1f1147a"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เลขที่ใบคำขอวิเคราะห์ :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="5" width="100" height="19" uuid="50919033-a69b-43b0-8bad-de75c92fefe4"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{request_number}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="300" splitType="Stretch">
+			<componentElement>
+				<reportElement x="-1" y="0" width="801" height="300" uuid="934e9ccd-ded7-4bff-9bd9-fc1bf4833cd9">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="MyCollectiondDataSet" uuid="25424f10-2fce-44db-946d-c121253684fe">
+						<dataSourceExpression><![CDATA[$P{CollectionBeanParam}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="45" uuid="06cdd241-76d7-406e-96af-337941284535">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="30" uuid="b05abcfb-4d26-40df-be3f-827cbc9f2d2b"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Labcode]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="45" height="30" uuid="360dfd54-6b86-45bd-9ff3-f9ad123b4bf0"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+									<pen lineWidth="0.0" lineColor="#FFFFFF"/>
+								</box>
+								<textElement textAlignment="Left">
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{labCode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="3e3643d0-282a-4fb3-b056-d9ee33cd718f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="35" height="30" uuid="e9e7e372-a125-48ea-9be8-09a4da3175c1"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ชนิด]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="35" height="30" uuid="b9ad2b2c-165b-47b0-8cac-462a89f7b36a"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="4f222f89-0745-4856-9760-7246f33c5ad1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="30" uuid="4a3de1aa-c3fc-4f36-93ea-a58f41e0e7e6"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ผลิตภัณฑ์]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="45" height="30" uuid="17c3497b-8d1a-447d-b89f-d42df60a5d0e"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{product}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="586ede89-c791-42bf-acbb-b6a77367a0cd">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="55" height="30" uuid="0f9cea50-9238-44e4-bed4-8798bfd82894"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[แหล่งที่มา]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="55" height="30" uuid="2de1cd0f-b2c3-452c-b5cc-9e62ba386634"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ref}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="b945170b-a314-4212-9799-87886ad011ca">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="45" height="30" uuid="b8acb8d1-b60e-4c2c-8fef-84b1e9e26b44"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ระบบขนส่ง]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="45" height="30" uuid="ae6ca3d7-9b0a-4000-886b-4908a996f0e4"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{transportationSystem}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="91b41516-625c-4859-a81d-349a8f03e18a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="37" height="30" uuid="5e4a33d4-0023-4503-9515-9ea98edf9b82"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[รูปแบบการ
+เก็บ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="37" height="30" uuid="41c4cccc-a0f3-4a1e-ae42-0fd267acd2c2"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{collectionFormat}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="6d22767c-0557-4df2-8052-381c804abdd3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="a0e36785-2900-4b06-acd5-41876f836ff6"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[เลขกลุ่มการสุ่ม]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="9705118f-b503-45c1-8110-d24fee555fbd"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{randomGroup}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="367b1c26-fbf5-4ffa-966b-0841c480a28f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="a34adb24-c851-4920-b54e-eb0693776e37"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[เลขที่ PO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="c32c5328-2776-4596-907e-c3c4702329e9"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{poNumber}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="dc8a35ed-fa78-40a9-b9d1-cfc0d0ad49b6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="0d2f45d1-9585-48f6-ba7a-7f00350bdf70"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[วันที่ PO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="e2ed962b-446d-462b-8e73-14738335062b"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{poDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="21e07ff4-66ee-4551-99c8-33b05fab0dc3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="a6ad80d1-2402-48d7-8a90-71bfcf6e003d"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[เลขที่ DO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="20373663-c767-4a17-afbd-ac6d2cd04c8a"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{doNumber}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="5b6695c4-0ec8-4a4d-9337-368dbb9947a5">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="44a40b1c-fe8c-443b-b3ed-72d6cdd758e0"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[เลขที่ SHIPMENT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="cf97564a-dbbf-4153-a9f2-3a8ce41f1446"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{shipmentNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="d634da8b-3299-475d-a318-344d9354c16e">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="f0580622-6e0c-4d03-a652-cdbf375258a7"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[เลขที่รถ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="398748b5-b789-40d3-9409-5f5828c77a33"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{carNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="9153a91b-2551-4fa6-98fe-ac554fedf159">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="cb75f23b-6cca-4a35-b1db-f330cbf0840d"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ช่องรถ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="d9cf3c7d-9246-4aaa-993d-51c72d3c32eb"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{carLane}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="539b57f2-02c1-4b1a-b121-7a1685637a5b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="dc451585-8c43-4f85-b36c-4cdd65bcc505"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ชื่อเรือ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="ad0493f3-e1e5-48cb-a033-f671df1c7a16"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{nameBoat}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="5fd1df15-26c8-44fc-8f94-3258fd33a7b6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column15"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="324be3e5-d5b0-4370-b99b-6f301531ca59"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ช่องเรือ P]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="54610125-9408-4094-9883-d48f622b64ca"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{boatLaneP}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="1f465ae3-d247-414a-a74f-a91e8a699c72">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column16"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="e6d9e09b-5e25-41ba-8f01-cb9dced97190"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ช่องเรือ S]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="51496c09-45f3-496d-ada9-3890cf2261db"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{boatLaneS}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="ccc2366f-686a-4a38-b761-17f82bcc60af">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column17"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="30" height="30" uuid="71c4015b-030d-47cb-8bd3-7ecb1db64480"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[LOT NO.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="30" height="30" uuid="c61d9f50-d454-4eea-a490-ed3649f382a4"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{lotNo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="12d53ad4-287d-41e0-a8c1-545dcfe6d00f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column18"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="b31149af-435f-45e0-847b-f0547bd7597e"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[วันที่การสุ่ม]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="f211c24f-a622-4631-927b-e179da905882"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{randomDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="33d73381-3cca-472e-a93a-47e231955b52">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column19"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="894196a0-7e7c-4089-a96e-465b32d0dab8"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[วันที่หมด
+อายุ]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="23531dc7-f567-49ef-8674-d880293f4d25"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateExpier}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="b616370f-af7f-4bcc-b5c2-30f777e5b2aa">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column20"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="35" height="30" uuid="d8252cb8-3bdf-4dd8-ae8e-01c646eb3d5d"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[รหัสพนัก
+งาน]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="35" height="30" uuid="6bc8740a-68f3-42c4-9a0c-fecda2030fef"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{employeeCode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="6deb50cc-69d6-4480-91ab-24016e5f11f0">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column21"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="fe9ebd5c-212a-49a1-ba12-2b3840fdc7fd"/>
+								<textElement textAlignment="Center">
+									<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[ชื่อพนักงาน]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="4a37a552-284e-4d2c-9ef6-d00986b06220"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1"/>
+								<textElement>
+									<font fontName="TH SarabunPSK" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{employeeName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

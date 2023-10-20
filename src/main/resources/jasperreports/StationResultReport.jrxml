@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e20dfbd-2313-4b21-9499-aa8d5802c606">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="d21c44de-7ea2-4fc6-8726-95e333968b98">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="station" class="java.lang.String"/>
+		<field name="saleArea" class="java.lang.String"/>
+		<field name="inspectionDate" class="java.lang.String"/>
+		<field name="unacceptableProducts" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="22f24b85-f87c-44e4-a322-6abfa7b58683">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="station" class="java.lang.String"/>
+		<field name="saleArea" class="java.lang.String"/>
+		<field name="inspectionDate" class="java.lang.String"/>
+		<field name="unacceptableProducts" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="DATA_STATION_PTF" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="DATA_STATION_NOT_QA" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="264" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="20" width="270" height="90" uuid="a93895b9-4cd6-4d54-9095-69a36f632ad2">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="83e7f59a-0658-4856-9f20-1fdad6370103">
+						<dataSourceExpression><![CDATA[$P{DATA_STATION_PTF}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="270" uuid="37c937ab-ee32-4daf-b90c-07845bd2ae60">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [4]"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="270" height="30" uuid="3fa77ef5-1508-44f1-8db0-69d9fa789303"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[รายชื่อสถานีบริการ PTF ที่ไม่รับน้ำมันจากบริษัท]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:column width="70" uuid="f16efbad-0689-4dcf-9e09-6ce0d327dca2">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="30" uuid="324fce58-74ee-4921-b024-3eb1cb5901fd">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[ชื่อสถานี]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="70" height="30" uuid="e47f8b5f-3e8b-4c88-a652-26d163e8f14f"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{station}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90" uuid="78ae7e9b-a85a-4d63-a925-f063cf79a81b">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30" uuid="add57b0e-1dba-4c02-8423-47cd80f72787"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[เขตการขาย]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30" uuid="6a1303b7-6cd4-4347-ac70-c2e7a4276bf1"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{saleArea}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="40" uuid="7bf51974-01d1-418a-8c2d-01609cca2d25">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="40" height="30" uuid="33865ad9-dd26-4f96-afa2-9f662648a771"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[วันที่ตรวจสอบ]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="40" height="30" uuid="3efcce39-bc47-4860-b8cc-43892f5d0053"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{inspectionDate}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="70" uuid="94111e1c-a936-4e35-b77a-7586faed2ace">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="30" uuid="e4619eb2-d6f1-463f-add9-f35c14b5a68e">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[ผลิตภัณฑ์ที่ไม่รับ]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="70" height="30" uuid="c90d0d01-4c04-459a-a6b6-536f4fd0c6f6"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{unacceptableProducts}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement x="283" y="20" width="270" height="90" uuid="384d1b6e-3910-4f15-865c-853132f0821c">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset2" uuid="b62a1012-fb76-448f-a321-dbe56236b2b6">
+						<dataSourceExpression><![CDATA[$P{DATA_STATION_NOT_QA}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="270" uuid="1fe331d6-a437-485a-836f-ffe0030b0745">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [4]"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="270" height="30" uuid="3bdabc92-487c-4a6c-9bfb-8fe3718312da"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="TH SarabunPSK" isBold="true"/>
+								</textElement>
+								<text><![CDATA[รายชื่อสถานีบริการที่ผลการทดสอบไม่ผ่านข้อกำหนด]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:column width="90" uuid="36fc48ec-5e82-4f24-b7f0-bce058323ebd">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30" uuid="0f21b5e7-c984-43b9-af78-f72e85f9321c">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[ชื่อสถานี]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30" uuid="128dd244-47f6-4642-aaa8-b56c6c92912d"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{station}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="70" uuid="0e8b8e7b-ca80-4525-928d-fa16264280e1">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="30" uuid="4279a502-a1c2-4dff-8acb-778dd2b644d2"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[เขตการขาย/เขตPTC]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="70" height="30" uuid="519f5e86-dd10-42c0-8b8f-2dc1b5daefa1"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{saleArea}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="40" uuid="8c0dc8ab-aae5-401d-a784-3cb86621a345">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="40" height="30" uuid="ac1804cc-8f28-4ab0-b162-6a3423548179"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[วันที่ตรวจสอบ]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="40" height="30" uuid="dc4afb10-4f9a-4a8a-bdbb-432e0efc04a1"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{inspectionDate}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="70" uuid="f18cbdcb-9287-41f6-92b1-ca9cf41e3216">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+							<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="70" height="30" uuid="984aa531-f2b5-4ae0-84af-60b74a7a74a9">
+										<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									</reportElement>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10" isBold="true"/>
+									</textElement>
+									<text><![CDATA[ผลิตภัณฑ์ที่ Off Spec]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="Table_TD" height="30">
+								<textField>
+									<reportElement x="0" y="0" width="70" height="30" uuid="1f9d73ea-d5ac-47f6-83ef-7aa9a01b919a"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="TH SarabunPSK" size="10"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$F{unacceptableProducts}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

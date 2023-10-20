@@ -1,0 +1,81 @@
+.tbHeader {
+	background: #3c8dbc;
+	color: white;
+}
+
+.TBODY{
+	font-size:  10px; 
+}
+.dtr-details{
+	font-size:  10px; 
+}
+.wrapper-btn{
+	padding-top:20px;
+	padding-buttom:0px;
+	padding-right:25px;
+}
+.modal-titlecus{
+	float:left;
+	font-size:24px;
+}
+.closecus{
+	float:rigth;
+}
+.clear{
+	clear:both;
+}
+.modal-bodycus{
+	margin:10px;
+}
+.titleInputModel{
+	min-height:35px;
+	cursor:default;
+	padding-top: 6px;
+}
+.boxGroupCus{
+	padding:5px;
+}
+.inputCus{
+	width:90% !important;
+}
+.form-group{
+	width:100% !important;
+}
+.zoneBody{
+	margin-top:10px;
+	background:#ffffff;
+	box-shadow: 0px 1px 2px #bdbdbd;
+}
+.select5Inp{
+	width:100%; 
+}
+.titleSelct{
+	min-height:35px;
+	cursor:default;
+	padding-top: 6px;
+	font-size:16px;
+	padding-right: 0px;
+}
+.tableCus{
+	margin:0px !important;
+	background-color: #3c8dbc !important;
+}
+.multiheaderTable{
+	padding:0px !important;
+}
+.vertical_align_inherit{
+	vertical-align: inherit !important;
+	cursor:default;
+}
+
+}
+.tableCusIn{
+	margin:0px !important;
+	background-color: #3c8dbc00 !important;
+}
+.clickType{
+	cursor:pointer;
+}
+.right{
+	float: right;
+}

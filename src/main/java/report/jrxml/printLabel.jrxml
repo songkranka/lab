@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_2" pageWidth="205" pageHeight="205" columnWidth="141" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e1eec410-573f-4f54-a0cb-e3fb50acc6b3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="labCode_No" class="java.lang.String"/>
+	<field name="poNo" class="java.lang.String"/>
+	<field name="plantname" class="java.lang.String"/>
+	<field name="plantid" class="java.lang.String"/>
+	<field name="productOil" class="java.lang.String"/>
+	<field name="sourceId" class="java.lang.String"/>
+	<field name="tankNo" class="java.lang.String"/>
+	<field name="boatName" class="java.lang.String"/>
+	<field name="carNo" class="java.lang.String"/>
+	<field name="boatSlot" class="java.lang.String"/>
+	<field name="sampleType" class="java.lang.String"/>
+	<field name="sampleDate" class="java.lang.String"/>
+	<field name="createBy" class="java.lang.String"/>
+	<field name="expireDate" class="java.lang.String"/>
+	<field name="carSlot" class="java.lang.String"/>
+	<field name="logisticName" class="java.lang.String"/>
+	<field name="pointSaveDetail" class="java.lang.String"/>
+	<field name="causeReturn" class="java.lang.String"/>
+	<detail>
+		<band height="201" splitType="Stretch">
+			<componentElement>
+				<reportElement x="172" y="1" width="79" height="199" uuid="ba79e8f4-e585-4326-8b79-3f30b47c3e44">
+					<property name="com.jaspersoft.studio.unit.barHeight" value="mm"/>
+					<property name="com.jaspersoft.studio.unit.barWidth" value="mm"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false" barWidth="0" barHeight="0" rotation="Right">
+					<jr:codeExpression><![CDATA[$F{labCode_No}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="40" y="11" width="98" height="10" uuid="3de44093-21d3-4203-be12-0515ec89aef3"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{poNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="31" width="25" height="10" uuid="44e99e42-9665-4c83-b453-10311e382503"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รหัสคลัง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="78" width="25" height="10" uuid="f082d2df-4551-4567-a2b4-2cf9d4cd7d45"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เลขที่ถัง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="41" width="25" height="10" uuid="1593925d-8975-482e-90de-7e4eec3e3930"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผลิตภัณฑ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="11" width="25" height="10" uuid="4034ae1f-cf41-4a67-b5fa-80f9e3e5f3a4"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PO NO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="128" width="98" height="20" uuid="2cf34714-24f1-448a-8b36-3587dc3ccada"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sampleType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="78" width="98" height="10" uuid="b0c4369a-a942-4c4f-8ac9-06871c9ea9ab"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tankNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="1" width="25" height="10" uuid="27b21a2a-321e-4a52-bd29-8550cd26198c"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lab Code ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="51" width="25" height="10" uuid="bf228efd-9ba8-4b77-a3d8-063e99f762f4"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แหล่งที่มา]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="88" width="98" height="10" uuid="a53db861-7331-41ab-b05e-30769c0ee133"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boatName}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="51" width="98" height="10" uuid="cc0b25ef-2e34-4fbe-a1e5-cd3b3a2f5636"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sourceId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="41" width="98" height="10" uuid="5565c644-1d10-4866-9ef3-1a763cc05949"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{productOil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="31" width="98" height="10" uuid="aa3d38b2-e903-4d22-8ea7-75d01de10e0e"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{plantid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="138" width="47" height="10" uuid="6e925ce9-b45b-4761-ae02-effc87ad7b9f"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันที่เก็บตัวอย่าง]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="21" width="98" height="10" uuid="60cee3bd-bf50-466c-885f-367b9df9e36d"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{plantname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="138" width="68" height="20" uuid="3be1d872-c92b-408e-a6dc-7e8c0f5edabc"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sampleDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="128" width="25" height="10" uuid="ec6acf4f-3cbf-4081-a923-a257f6e98fbc"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[การเก็บ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="21" width="25" height="10" uuid="bcafe8ef-f2e7-43da-b46b-e89f9ae1115c"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[คลัง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="88" width="25" height="10" uuid="760a2226-d50a-4fd4-9b3c-cd85cbd2d0cc"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ชื่อเรือ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="1" width="98" height="20" uuid="b6e6c0a7-5763-4898-907a-7b21b0547f38"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{labCode_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="98" width="98" height="10" uuid="2797558e-a4c2-4263-b20d-eb32b51287ed"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="118" width="98" height="16" uuid="7b96b571-0344-4a44-b2e2-96ea72349ff1"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carSlot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="148" width="68" height="10" uuid="feb70244-7ce5-448d-a0fa-07bc13ca15cf"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expireDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="98" width="25" height="10" uuid="fe5dec0c-8861-4e81-8a0b-fae0a0ae3d9a"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ทะเบียนรถ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="118" width="25" height="10" uuid="1fe1360e-922f-4e86-96ac-1b7c6262a996"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ช่องรถ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="148" width="47" height="10" uuid="151b5a92-da98-4d29-a3cf-29e91959ca92"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันหมดอายุ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="109" y="134" width="61" height="63" uuid="11c2c267-811a-4309-9ff6-d2f7148d42c8"/>
+				<imageExpression><![CDATA[com.google.zxing.client.j2se.MatrixToImageWriter.toBufferedImage(
+    new com.google.zxing.qrcode.QRCodeWriter().encode(
+        $F{labCode_No},
+       com.google.zxing.BarcodeFormat.QR_CODE, 300, 300
+    ))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="12" y="158" width="47" height="10" uuid="718f34cc-49fd-4132-bd5f-20feb7a24999"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าหน้าที่เก็บตัวอย่าง]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="62" y="158" width="68" height="10" uuid="91eca6f6-7b9d-4d7e-b439-a93937aa1654"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createBy}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="168" width="30" height="10" uuid="0f06719d-a395-4140-a1cf-fbbe6ac3b427"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รายละเอียด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="168" width="3" height="10" uuid="5a382878-8d18-4512-bb5e-dae7e1173337"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:pointSaveDetail]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="168" width="86" height="10" uuid="58b72a3a-8adb-46b5-a77f-f37ce4fba2b9"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pointSaveDetail}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="184" width="25" height="10" uuid="0f06719d-a395-4140-a1cf-fbbe6ac3b427"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[สาเหตุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="184" width="3" height="10" uuid="5a382878-8d18-4512-bb5e-dae7e1173337"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="40" y="184" width="86" height="10" uuid="58b72a3a-8adb-46b5-a77f-f37ce4fba2b9"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{causeReturn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="108" width="25" height="10" uuid="39fae22e-2a6e-430c-a5a6-0a0732cf99a6"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ช่องเรือ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="1" width="3" height="20" uuid="dde65d90-bc7f-4829-b621-4f0fd19a731a"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="11" width="3" height="10" uuid="18974769-1e4a-4fc5-8ec6-ac6c4448693f"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="21" width="3" height="10" uuid="99172c52-ab0b-43ed-b900-de1bf0a7dc32"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="31" width="3" height="10" uuid="7a9d7747-eb7b-43e2-8ef3-ca970b19a658"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="41" width="3" height="10" uuid="d6f4d055-1ebe-4df3-9cc7-8bdf50078a40"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="51" width="3" height="10" uuid="e17baf6a-cbe0-4944-9eed-d4cc3cca935f"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="78" width="3" height="10" uuid="eb993925-912a-42e5-8a92-4068afe85504"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="88" width="3" height="10" uuid="301e9224-a70e-47d1-9299-4b553e1553d2"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="98" width="3" height="10" uuid="dbd0b34f-f939-4329-ba49-b1ee2c7118ba"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="108" width="3" height="10" uuid="a7dd25b7-e757-43e6-a894-9359b5b700f7"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="118" width="3" height="16" uuid="16959d58-f6fc-4c00-a5a8-c41f09cde1ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="128" width="3" height="20" uuid="2db30cb4-63d2-41ea-841c-c452e2c941fc"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="138" width="3" height="20" uuid="6772e449-8c30-4060-9077-3877bf84ac1b"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="158" width="3" height="10" uuid="92dc32ab-f641-4d5a-844a-764591e9ba8f"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="148" width="3" height="10" uuid="5c11d5d8-7596-45ce-a981-4fe520e6d01a"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="68" width="25" height="10" uuid="0f06719d-a395-4140-a1cf-fbbe6ac3b427"/>
+				<textElement textAlignment="Left">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ขนส่ง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="37" y="68" width="3" height="10" uuid="5a382878-8d18-4512-bb5e-dae7e1173337"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="68" width="98" height="10" uuid="58b72a3a-8adb-46b5-a77f-f37ce4fba2b9"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{logisticName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="108" width="98" height="10" uuid="e3da0d82-f3a5-4eae-87a1-5984d7f5f649"/>
+				<textElement>
+					<font fontName="TH SarabunPSK" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boatSlot}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
